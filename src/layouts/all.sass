@@ -9,6 +9,9 @@ $primary: $cc-blue
 $primary-invert: $cc-blue-invert
 
 // Helper Classes
+body
+  transition: all cubic-bezier(0.0, 0.0, 0.2, 1) .2s
+
 .full-width-image-container
   width: 100vw
   height: 400px
@@ -32,6 +35,28 @@ $primary-invert: $cc-blue-invert
   img
     max-height: 2rem
 
+//Navmenu
+.navMenu
+  background: #efefef
+  height: 100%
+  position: fixed
+  right: 0
+  top: 0
+  transform: translateX(200px)
+  width: 200px
+  z-index: 9999
+  transition: all cubic-bezier(0.0, 0.0, 0.2, 1) .2s
+  padding-top: 52px
+  &.active
+    transform: translateX(0)
+    transition: all cubic-bezier(0.0, 0.0, 0.2, 1) .2s
+
+.navMenuList
+  margin: 0
+  padding: 0
+  li
+    padding: .5rem 0
+
 //Navbutton
 .Navbutton
   display: flex
@@ -39,3 +64,11 @@ $primary-invert: $cc-blue-invert
   justify-content: center
   height: 48px
   width: 48px
+  position: fixed
+  top: 2px
+  right: 16px
+  z-index: 10000
+  button
+    background: none
+    border: none
+    outline: none
