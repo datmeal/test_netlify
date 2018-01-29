@@ -24,6 +24,9 @@ const Navbar = () => (
         </Link>
       </div>
       <div className="navbar-end">
+        <Link className="navbar-item" to="/admin/">
+          Admin
+        </Link>
         <Navbutton />
       </div>
     </div>
