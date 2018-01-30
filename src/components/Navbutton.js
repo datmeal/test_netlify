@@ -1,14 +1,34 @@
 import React, { Component } from 'react';
-import Link from 'gatsby-link';
 import menu from '../img/menu.svg';
 
 class Navbutton extends Component {
+  constructor(props) {
+    super(props);
+
+
+    this.state = {
+      hover: false
+    }
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    this.props.handleClick();
+  }
+
+  handleHover(e) {
+    this.props.handleClick();
+  }
+
   render() {
     return (
-      <div className="Navbutton">
-        <button>
-          <img src={menu} />
-        </button>
+      <div>
+        <div className="Navbutton">
+          <button onClick={() => this.handleClick()} onMouseEnter={() => this.handleHover()}>
+            <img src={menu} />
+          </button>
+        </div>
       </div>
     )
   }

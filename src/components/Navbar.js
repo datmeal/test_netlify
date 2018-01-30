@@ -3,14 +3,12 @@ import Link from 'gatsby-link';
 
 import github from '../img/github-icon.svg';
 import logo from '../img/logo.svg';
-import Navbutton from './Navbutton.js';
+import Navmenu from './Navmenu.js';
 
 class Navbar extends Component {
 
   
   componentDidMount() {
-    const navMenu = document.querySelector(".navMenu");
-    console.log(navMenu);
   }
 
   render() {
@@ -37,7 +35,7 @@ class Navbar extends Component {
             <Link className="navbar-item" to="/admin/">
               Admin
             </Link>
-            <Navbutton />
+            <Navmenu />
           </div>
         </div>
       </nav>
