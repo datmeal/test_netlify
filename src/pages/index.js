@@ -29,6 +29,7 @@ export default class IndexPage extends React.Component {
             <div className="container hero-container">
               <div className="hero-left">
                 <h1 className="title">POWER TO THE CROWDS</h1>
+                <br/>
                 <h2 className="subtitle">既存の枠組みにとらわれない、新しい発想で世界を変革する事を応援します。</h2>
               </div>
               <div className="hero-right">
