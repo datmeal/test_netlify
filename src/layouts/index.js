@@ -8,7 +8,9 @@ import './all.sass';
 
 const TemplateWrapper = ({ children }) => (
   <div>
-    <Helmet title="Home | Gatsby + Netlify CMS" />
+    <Helmet title="Home | Gatsby + Netlify CMS">
+      <html className="has-navbar-fixed-top" />
+    </Helmet>
     <Navbar />
     <div>{children()}</div>
   </div>
