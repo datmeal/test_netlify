@@ -1,4 +1,5 @@
 @import "~bulma/sass/utilities/initial-variables"
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css)
 
 // Config
 $cc-blue: #1a2946
@@ -9,6 +10,8 @@ $cc-orange: #f05a1a
 $primary: $cc-blue
 $primary-invert: $cc-blue-invert
 $link: $cc-orange
+
+$family-sans-serif: "Ubuntu", 'Noto Sans Japanese', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif
 
 // Helper Classes
 body
@@ -110,6 +113,10 @@ body
   background-color: $light
 
 .section.is-primary
+  background-color: $primary
+
+//Same with container
+.container.is-primary
   background-color: $primary
 
 //Section "More" Button

@@ -179,8 +179,8 @@ export default class IndexPage extends React.Component {
             </div>
           </div>
         </section>
-        <footer className="footer is-primary">
-          <div className="container has-text-centered">
+        <section className="section is-primary">
+          <div className="container has-text-centered has-text-white">
             <p>最新情報はSNSでもご覧頂けます</p>
             <div className="sns-icons">
               <i className="fab fa-5x fa-facebook"></i>
@@ -200,6 +200,9 @@ export default class IndexPage extends React.Component {
               </span>
             </a>
           </div>
+        </section>
+        <footer className="footer">
+          
         </footer>
       </div>
     );
