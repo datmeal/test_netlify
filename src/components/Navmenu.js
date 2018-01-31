@@ -40,11 +40,21 @@ class Navmenu extends Component {
       <nav onMouseLeave={this.deactivate}>
         <div className={this.state.navMenuClass} >
           <ul className="navMenuList menu-list">
-            <Link to="/">Home</Link>
-            <Link to="/about">About Us</Link>
-            <Link to="/products">Contact</Link>
-            <Link to="/">Blog</Link>
-            <Link to="/admin/">Admin</Link>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About Us</Link>
+            </li>
+            <li>
+              <Link to="/products">Contact</Link>
+            </li>
+            <li>
+              <Link to="/">Blog</Link>
+            </li>
+            <li>
+              <Link to="/admin/">Admin</Link>
+            </li>
           </ul>
         </div>
         <Navbutton handleClick={this.activate} />

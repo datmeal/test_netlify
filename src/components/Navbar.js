@@ -19,7 +19,7 @@ class Navbar extends Component {
           <div className="navbar-brand">
             <Link to="/" className="navbar-item">
               <figure className="image">
-                <img src={logo} alt="Crowd Cast Logo" width="128px" height="32px" />
+                <img src={logo} alt="Crowd Cast Logo" width="128" height="32" />
               </figure>
             </Link>
           </div>

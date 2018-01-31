@@ -3,6 +3,7 @@ import Link from "gatsby-link";
 import Script from "react-load-script";
 import graphql from "graphql";
 import gd from '../img/gd.png';
+import Member from '../components/Member';
 
 export default class IndexPage extends React.Component {
   handleScriptLoad() {
@@ -24,7 +25,7 @@ export default class IndexPage extends React.Component {
 
     return (
       <div>
-        <section className="hero is-primary">
+        <div className="hero is-primary">
           <div className="hero-body">
             <div className="container hero-container">
               <div className="hero-left">
@@ -37,13 +38,13 @@ export default class IndexPage extends React.Component {
                 <div><img src="/img/iPhoneX.png" width="151" height="264" alt="iPhoneX" /></div>
                 <div className="flex-column">
                   <img src="/img/logo_short.svg" width="89" height="80" alt="Staple Logo" />
-                  <img src="/img/apple-store.svg" height="40" alt="iPhoneX" />
-                  <img src="/img/google-play.svg" height="40" alt="iPhoneX" />
+                  <img src="/img/apple-store.svg" height="40" alt="Apple Store" />
+                  <img src="/img/google-play.svg" height="40" alt="Google Play" />
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
         <section className="section">
           <Script
             url="https://identity.netlify.com/v1/netlify-identity-widget.js"
@@ -110,6 +111,19 @@ export default class IndexPage extends React.Component {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+        <section className="section">
+          <div className="container">
+            <h1 className="title has-text-primary">MEMBERS</h1>
+            <div className="level">
+              <Member alt="test" src="http://crowdcast.jp/wp/wp-content/uploads/2011/06/t_hoshikawa_color_350-300x300.jpg" />
+              <Member alt="test" src="http://crowdcast.jp/wp/wp-content/uploads/2011/06/t_hoshikawa_color_350-300x300.jpg" />
+              <Member alt="test" src="http://crowdcast.jp/wp/wp-content/uploads/2011/06/t_hoshikawa_color_350-300x300.jpg" />
+              <Member alt="test" src="http://crowdcast.jp/wp/wp-content/uploads/2011/06/t_hoshikawa_color_350-300x300.jpg" />
+              <Member alt="test" src="http://crowdcast.jp/wp/wp-content/uploads/2011/06/t_hoshikawa_color_350-300x300.jpg" />
+            </div>
+            <h2 className="subtitle has-text-primary has-text-weight-bold is-size-5 has-text-centered">Future is not in front of us, it is inside of us. <br />新しい未来を私達と一緒に作りませんか？</h2>
           </div>
         </section>
       </div>
