@@ -77,6 +77,11 @@ export default class IndexPage extends React.Component {
                   </p>
                 </div>
               ))}
+            <div className="level">
+              <div className="level-item">
+                <a href="" className="button has-text-primary">ニュース一覧</a>
+              </div>
+            </div>
           </div>
         </section>
         <section className="section is-light">
@@ -111,6 +116,9 @@ export default class IndexPage extends React.Component {
                 </div>
               </div>
             </div>
+            <div className="more-button">
+              <a href="" className="button is-primary">他のサービスを見る</a>
+            </div>
           </div>
         </section>
         <section className="section">
@@ -132,6 +140,9 @@ export default class IndexPage extends React.Component {
                 </div>
               </div>
             </div>
+            <div className="more-button">
+              <a href="" className="button is-link">採用情報を見る</a>
+            </div>
           </div>
         </section>
         <section className="section is-primary">
@@ -143,6 +154,9 @@ export default class IndexPage extends React.Component {
               <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
               <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
               <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
+            </div>
+            <div className="more-button">
+              <a href="" className="button is-link">ブログ一覧</a>
             </div>
           </div>
         </section>
