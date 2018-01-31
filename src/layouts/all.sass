@@ -5,8 +5,10 @@ $cc-blue: #1a2946
 $cc-blue-invert: #fff
 $cc-orange: #f05a1a
 
+
 $primary: $cc-blue
 $primary-invert: $cc-blue-invert
+$link: $cc-orange
 
 // Helper Classes
 body
@@ -107,6 +109,9 @@ body
 .section.is-light
   background-color: $light
 
+.section.is-primary
+  background-color: $primary
+
 //Services
 .service-column
   .box
@@ -114,3 +119,18 @@ body
     align-items: center
     justify-content: center
     flex-direction: column
+
+//SNS Icons
+.sns-icons
+  color: $white
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  > svg
+    margin: 2rem
+
+//Footer
+.footer
+  color: $white
+  &.is-primary
+    background-color: $primary

@@ -124,8 +124,50 @@ export default class IndexPage extends React.Component {
               <Member alt="test" src="http://crowdcast.jp/wp/wp-content/uploads/2011/06/t_hoshikawa_color_350-300x300.jpg" />
             </div>
             <h2 className="subtitle has-text-primary has-text-weight-bold is-size-5 has-text-centered">Future is not in front of us, it is inside of us. <br />新しい未来を私達と一緒に作りませんか？</h2>
+            <div className="level">
+              <div className="level-item">
+                <div className="buttons">
+                  <a href="/products" className="button is-link">採用情報</a>
+                  <a href="/products" className="button">メンバーのプロフィール</a>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
+        <section className="section is-primary">
+          <div className="container">
+            <h1 className="title has-text-white">BLOGS</h1>
+            <div className="level">
+              <Member alt="test" src="http://crowdcast.jp/wp/wp-content/uploads/2011/06/t_hoshikawa_color_350-300x300.jpg" />
+              <Member alt="test" src="http://crowdcast.jp/wp/wp-content/uploads/2011/06/t_hoshikawa_color_350-300x300.jpg" />
+              <Member alt="test" src="http://crowdcast.jp/wp/wp-content/uploads/2011/06/t_hoshikawa_color_350-300x300.jpg" />
+              <Member alt="test" src="http://crowdcast.jp/wp/wp-content/uploads/2011/06/t_hoshikawa_color_350-300x300.jpg" />
+              <Member alt="test" src="http://crowdcast.jp/wp/wp-content/uploads/2011/06/t_hoshikawa_color_350-300x300.jpg" />
+            </div>
+          </div>
+        </section>
+        <footer className="footer is-primary">
+          <div className="container has-text-centered">
+            <p>最新情報はSNSでもご覧頂けます</p>
+            <div className="sns-icons">
+              <i className="fab fa-5x fa-facebook"></i>
+              <i className="fab fa-5x fa-twitter"></i>
+              <i className="fab fa-5x fa-youtube"></i>
+            </div>
+            <p className="has-text-weight-bold">クラウドキャスト株式会社<br />Crowd Cast Co., Ltd.</p>
+            <br />
+            <p>東京都千代田区大手町１－６－１<br />大手町ビル4階 FINOLAB</p>
+            <br />
+            <a href="https://goo.gl/maps/DbabAyWART42" className="button is-link">
+              <span>
+                Google Maps
+              </span>
+              <span className="icon">
+                <i className="fas fa-map-marker-alt"></i>
+              </span>
+            </a>
+          </div>
+        </footer>
       </div>
     );
   }
