@@ -113,15 +113,15 @@ export default class IndexPage extends React.Component {
             </div>
           </div>
         </section>
-        {/* <section className="section">
+        <section className="section">
           <div className="container">
             <h1 className="title has-text-primary">MEMBERS</h1>
             <div className="level">
-              <Member alt="test" src="http://crowdcast.jp/wp/wp-content/uploads/2011/06/t_hoshikawa_color_350-300x300.jpg" />
-              <Member alt="test" src="http://crowdcast.jp/wp/wp-content/uploads/2011/06/t_hoshikawa_color_350-300x300.jpg" />
-              <Member alt="test" src="http://crowdcast.jp/wp/wp-content/uploads/2011/06/t_hoshikawa_color_350-300x300.jpg" />
-              <Member alt="test" src="http://crowdcast.jp/wp/wp-content/uploads/2011/06/t_hoshikawa_color_350-300x300.jpg" />
-              <Member alt="test" src="http://crowdcast.jp/wp/wp-content/uploads/2011/06/t_hoshikawa_color_350-300x300.jpg" />
+              <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
+              <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
+              <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
+              <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
+              <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
             </div>
             <h2 className="subtitle has-text-primary has-text-weight-bold is-size-5 has-text-centered">Future is not in front of us, it is inside of us. <br />新しい未来を私達と一緒に作りませんか？</h2>
             <div className="level">
@@ -133,20 +133,20 @@ export default class IndexPage extends React.Component {
               </div>
             </div>
           </div>
-        </section> */}
-        {/* <section className="section is-primary">
+        </section>
+        <section className="section is-primary">
           <div className="container">
             <h1 className="title has-text-white">BLOGS</h1>
             <div className="level">
-              <Member alt="test" src="http://crowdcast.jp/wp/wp-content/uploads/2011/06/t_hoshikawa_color_350-300x300.jpg" />
-              <Member alt="test" src="http://crowdcast.jp/wp/wp-content/uploads/2011/06/t_hoshikawa_color_350-300x300.jpg" />
-              <Member alt="test" src="http://crowdcast.jp/wp/wp-content/uploads/2011/06/t_hoshikawa_color_350-300x300.jpg" />
-              <Member alt="test" src="http://crowdcast.jp/wp/wp-content/uploads/2011/06/t_hoshikawa_color_350-300x300.jpg" />
-              <Member alt="test" src="http://crowdcast.jp/wp/wp-content/uploads/2011/06/t_hoshikawa_color_350-300x300.jpg" />
+              <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
+              <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
+              <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
+              <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
+              <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
             </div>
           </div>
-        </section> */}
-        {/* <footer className="footer is-primary">
+        </section>
+        <footer className="footer is-primary">
           <div className="container has-text-centered">
             <p>最新情報はSNSでもご覧頂けます</p>
             <div className="sns-icons">
@@ -167,7 +167,7 @@ export default class IndexPage extends React.Component {
               </span>
             </a>
           </div>
-        </footer> */}
+        </footer>
       </div>
     );
   }
