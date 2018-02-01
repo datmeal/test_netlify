@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
-import Navbutton from './Navbutton.js';
 
-class Navmenu extends Component {
+export default class Navmenu extends Component {
 
   constructor(props) {
     super(props);
 
     this.state = {
       active: false,
-      navMenuClass: "navMenu"
+      navMenuClass: "navMenu",
+      buttonIcon: "fas fa-lg fa-bars"
     }
 
     this.activate = this.activate.bind(this);
@@ -57,10 +57,36 @@ class Navmenu extends Component {
             </li>
           </ul>
         </div>
-        <Navbutton handleClick={this.activate} />
+        <Navbutton handleClick={this.activate} icon={this.state.buttonIcon} />
       </nav>
     )
   }
 }
 
-export default Navmenu;
+class Navbutton extends Component {
+  constructor(props) {
+    super(props);
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    this.props.handleClick();
+  }
+
+  handleHover(e) {
+    this.props.handleClick();
+  }
+
+  render() {
+    return (
+      <div>
+        <div className="Navbutton" onClick={() => this.handleClick()} onMouseEnter={() => this.handleHover()}>
+          <button>
+            <i className={this.props.icon} />
+          </button>
+        </div>
+      </div>
+    )
+  }
+}

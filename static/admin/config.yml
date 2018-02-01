@@ -22,6 +22,12 @@ collections:
   - name: "pages"
     label: "Pages"
     create: true
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Path", name: "path", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
     files:
       - file: "src/pages/about/about.md"
         label: "About"
