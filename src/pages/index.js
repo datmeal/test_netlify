@@ -80,7 +80,7 @@ export default class IndexPage extends React.Component {
               ))}
             <div className="level">
               <div className="level-item">
-                <a href="" className="button has-text-primary">ニュース一覧</a>
+                <Link to="/" className="button has-text-primary">ニュース一覧</Link>
               </div>
             </div>
             <Scrolldown />
@@ -119,14 +119,14 @@ export default class IndexPage extends React.Component {
               </div>
             </div>
             <div className="more-button">
-              <a href="" className="button is-primary">
+              <Link to="/" className="button is-primary">
                 <span>
                   他のサービスを見る
                 </span>
                 <span className="icon">
                   <i className="fas fa-caret-right"></i>
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -144,20 +144,20 @@ export default class IndexPage extends React.Component {
             <div className="level">
               <div className="level-item">
                 <div className="buttons">
-                  <a href="/products" className="button is-link">採用情報</a>
-                  <a href="/products" className="button">メンバーのプロフィール</a>
+                  <Link to="/products" className="button is-link">採用情報</Link>
+                  <Link to="/products" className="button">メンバーのプロフィール</Link>
                 </div>
               </div>
             </div>
             <div className="more-button">
-              <a href="" className="button is-link">
+              <Link to="/" className="button is-link">
                 <span>
                   採用情報を見る
                 </span>
                 <span className="icon">
                   <i className="fas fa-caret-right"></i>
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -172,12 +172,12 @@ export default class IndexPage extends React.Component {
               <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
             </div>
             <div className="more-button">
-              <a href="" className="button is-link"><span>
+              <Link to="/" className="button is-link"><span>
                 ブログ一覧
               </span>
                 <span className="icon">
                   <i className="fas fa-caret-right"></i>
-                </span></a>
+                </span></Link>
             </div>
           </div>
         </section>

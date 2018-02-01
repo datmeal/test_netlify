@@ -17,6 +17,16 @@ const Scrolldown = () => {
     console.log(scrollItems);
     console.log(pageMaxPosition);
     console.log(pagePosition);
+
+    Array.prototype.forEach.call(scrollItems, function(ele, index) {
+      console.log(ele)
+      console.log(index)
+      ele.classList.add("#" + index);
+    });
+  }
+
+  function scrollIt(destination, duration = 200, easing = 'linear', callback) {
+
   }
 
   return (
