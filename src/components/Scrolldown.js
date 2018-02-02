@@ -8,15 +8,18 @@ class Scrolldown extends Component {
 
     this.state = {
       offset: -52,
+      scrollTarget: document.getElementById(this.props.targetId)
     }
   }
 
 
   componentDidMount() {
+    const scrollTarget = document.getElementById(this.props.targetId);
     const offsetHeight = document.querySelector(".navbar") // Shame, should probably pass down the offset instead of searching for it.
     const offset = offsetHeight.clientHeight
     this.setState({
-      offset: -offset
+      offset: -offset,
+      scrollTarget: scrollTarget
     });
   }
 
@@ -24,7 +27,7 @@ class Scrolldown extends Component {
     return (
       <div className="level">
         <div className="level-item">
-          <button className="button" onClick={() => scrollToComponent(document.getElementById(this.props.targetId), {align:'top', ease:'outExpo', offset:this.state.offset})}>
+          <button className="button" onClick={() => scrollToComponent(this.state.scrollTarget, {align:'top', ease:'inOutExpo', offset:this.state.offset})}>
             <img src={scrolldownButton} />
           </button>
         </div>

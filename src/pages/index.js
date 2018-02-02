@@ -128,9 +128,10 @@ export default class IndexPage extends React.Component {
                 </span>
               </Link>
             </div>
+            <Scrolldown targetId="members" />
           </div>
         </section>
-        <section className="section">
+        <section className="section" id="members">
           <div className="container">
             <h1 className="title has-text-primary">MEMBERS</h1>
             <div className="level">
@@ -159,9 +160,10 @@ export default class IndexPage extends React.Component {
                 </span>
               </Link>
             </div>
+            <Scrolldown targetId="blogs" />
           </div>
         </section>
-        <section className="section is-primary">
+        <section className="section is-primary" id="blogs">
           <div className="container">
             <h1 className="title has-text-white">BLOGS</h1>
             <div className="level">
