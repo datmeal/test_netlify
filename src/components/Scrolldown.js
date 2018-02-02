@@ -1,43 +1,40 @@
-import React from 'react';
+import React, {Component} from 'react';
 import scrolldownButton from '../img/scrolldown.svg';
+import scrollToComponent from 'react-scroll-to-component';
 
-const Scrolldown = () => {
+class Scrolldown extends Component {
+  constructor(props) {
+    super(props)
 
-  let pagePosition = 0,
-      sectionSelector = 'section',
-      scrollItems = document.querySelectorAll(sectionSelector),
-      offsetTolerance = 30,
-      pageMaxPosition = scrollItems.length - 1;
-  
-  const handleClick = () => {
-    if(pagePosition+1 <= pageMaxPosition) {
-      pagePosition++;
+    this.state = {
+      offset: -52,
     }
+  }
 
-    console.log(scrollItems);
-    console.log(pageMaxPosition);
-    console.log(pagePosition);
 
-    Array.prototype.forEach.call(scrollItems, function(ele, index) {
-      console.log(ele)
-      console.log(index)
-      ele.classList.add("#" + index);
+  componentDidMount() {
+    const offsetHeight = document.querySelector(".navbar") // Shame, should probably pass down the offset instead of searching for it.
+    const offset = offsetHeight.clientHeight
+    this.setState({
+      offset: -offset
     });
   }
 
-  function scrollIt(destination, duration = 200, easing = 'linear', callback) {
-
+  render() {   
+    return (
+      <div className="level">
+        <div className="level-item">
+          <button className="button" onClick={() => scrollToComponent(document.getElementById(this.props.targetId), {align:'top', ease:'outExpo', offset:this.state.offset})}>
+            <img src={scrolldownButton} />
+          </button>
+        </div>
+      </div>
+    )
   }
 
-  return (
-    <div className="level">
-      <div className="level-item">
-        <button className="button" onClick={handleClick}>
-          <img src={scrolldownButton} />
-        </button>
-      </div>
-    </div>
-  )
+  
+
+  
 }
 
 export default Scrolldown;

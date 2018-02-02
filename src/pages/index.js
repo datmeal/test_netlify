@@ -4,7 +4,7 @@ import Script from "react-load-script";
 import graphql from "graphql";
 import gd from '../img/gd.png';
 import Member from '../components/Member';
-import Scrolldown from '../components/Scrolldown';
+import Scrolldown from '../components/Scrolldown.js';
 
 export default class IndexPage extends React.Component {
   handleScriptLoad() {
@@ -83,10 +83,10 @@ export default class IndexPage extends React.Component {
                 <Link to="/" className="button has-text-primary">ニュース一覧</Link>
               </div>
             </div>
-            <Scrolldown />
+            <Scrolldown targetId="services"/>
           </div>
         </section>
-        <section className="section is-light">
+        <section className="section is-light" id="services">
           <div className="container">
             <h1 className="title has-text-primary">SERVICES</h1>
             <div className="columns">
