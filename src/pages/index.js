@@ -4,9 +4,11 @@ import Script from "react-load-script";
 import graphql from "graphql";
 import gd from '../img/gd.png';
 import Member from '../components/Member';
+import Footer from '../components/Footer';
 //import Scrolldown from '../components/Scrolldown.js';
 
 export default class IndexPage extends React.Component {
+  
   handleScriptLoad() {
     if (typeof window !== `undefined` && window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {
@@ -29,22 +31,39 @@ export default class IndexPage extends React.Component {
         <div className="hero is-primary">
           <div className="hero-body">
             <div className="container hero-container">
-              <div className="hero-left">
+              <div className="hero-left is-hidden-touch">
                 <h1 className="title">POWER TO THE CROWDS</h1>
                 <br/>
                 <h2 className="subtitle">既存の枠組みにとらわれない、新しい発想で世界を変革する事を応援します。</h2>
               </div>
-              <div className="hero-right">
+              <div className="hero-right is-hidden-touch">
                 <div><img src={gd} width="74" height="37" alt="Good Design" /></div>
-                <div><img src="/img/iPhoneX.png" width="151" height="264" alt="iPhoneX" /></div>
+                <div><img src="/img/ipx.png" width="151" height="264" alt="iPhoneX" /></div>
                 <div className="flex-column">
                   <img src="/img/logo_short.svg" width="89" height="80" alt="Staple Logo" />
                   <img src="/img/apple-store.svg" height="40" alt="Apple Store" />
                   <img src="/img/google-play.svg" height="40" alt="Google Play" />
                 </div>
               </div>
+              <div className="hero-mobile is-hidden-desktop">
+                <figure className="image">
+                  <img src="/img/ipx.png" width="168" height="337" alt="iPhoneX" />
+                </figure>
+              </div>
             </div>
           </div>
+        </div>
+        <div className="mobile-buttons is-flex is-hidden-desktop">
+          <div className="is-flex">
+            <figure className="image">
+              <img src="/img/staple_logo.png" width="91" height="32" alt="Staple Logo" />
+            </figure>
+            <figure className="image">
+              <img src="/img/good-design-award2017.png" width="132" height="42" alt="Good Design" />
+            </figure>
+          </div>
+          <div className="is-block"><img src="/img/apple-store.svg" height="48" alt="Apple Store" /></div>
+          <div className="is-block"><img src="/img/google-play.svg" height="48" alt="Google Play" /></div>
         </div>
         <section className="section">
           <Script
@@ -52,7 +71,7 @@ export default class IndexPage extends React.Component {
             onLoad={() => this.handleScriptLoad()}
           />
           <div className="container">
-            <h1 className="title has-text-primary">NEWS</h1>
+            <h1 className="title has-text-primary has-text-centered-touch">NEWS</h1>
             {posts
               .filter(post => post.node.frontmatter.templateKey === "blog-post")
               .map(({ node: post }) => (
@@ -88,7 +107,7 @@ export default class IndexPage extends React.Component {
         </section>
         <section className="section is-light" id="services">
           <div className="container">
-            <h1 className="title has-text-primary">SERVICES</h1>
+            <h1 className="title has-text-primary has-text-centered-touch">SERVICES</h1>
             <div className="columns">
               <div className="column service-column">
                 <div className="box">
@@ -133,7 +152,7 @@ export default class IndexPage extends React.Component {
         </section>
         <section className="section" id="members">
           <div className="container">
-            <h1 className="title has-text-primary">MEMBERS</h1>
+            <h1 className="title has-text-primary has-text-centered-touch">MEMBERS</h1>
             <div className="level">
               <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
               <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
@@ -183,6 +202,7 @@ export default class IndexPage extends React.Component {
             </div>
           </div>
         </section>
+        <Footer />
       </div>
     );
   }

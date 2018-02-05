@@ -96,6 +96,8 @@ body
 
 .hero-container
   display: flex
+  +touch
+    justify-content: center
 
 .hero-left
   display: flex
@@ -107,6 +109,13 @@ body
   align-items: flex-end
   div
     margin-left: 1rem
+
+.mobile-buttons
+  flex-direction: column
+  align-items: center
+  .is-flex
+    align-items: center
+    padding: 1rem
 
 .flex-column
   display: flex
@@ -132,6 +141,12 @@ body
   position: absolute
   top: 0
   right: 0
+  +touch
+    display: flex
+    justify-content: center
+    position: relative
+    a
+      width: 100%
 
 //Services
 .service-column
