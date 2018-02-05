@@ -44,16 +44,19 @@ export default class Navmenu extends Component {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about">About Us</Link>
+              <Link to="/blog">News</Link>
             </li>
             <li>
-              <Link to="/products">Contact</Link>
+              <Link to="/about/">About Us</Link>
             </li>
             <li>
-              <Link to="/">Blog</Link>
+              <Link to="/jobs/">Jobs</Link>
             </li>
             <li>
-              <Link to="/admin/">Admin</Link>
+              <Link to="/contacts/">Contact</Link>
+            </li>
+            <li>
+              <Link to="/admin/">Admin(temporary)</Link>
             </li>
           </ul>
         </div>
