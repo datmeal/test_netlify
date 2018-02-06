@@ -144,7 +144,7 @@ export default class IndexPage extends React.Component {
                   他のサービスを見る
                 </span>
                 <span className="icon is-primary">
-                  <i className="fas fa-caret-right"></i>
+                  <i className="fas fa-caret-right fa-2x"></i>
                 </span>
               </Link>
             </div>
@@ -176,7 +176,7 @@ export default class IndexPage extends React.Component {
                   採用情報を見る
                 </span>
                 <span className="icon is-link">
-                  <i className="fas fa-caret-right"></i>
+                  <i className="fas fa-caret-right fa-2x"></i>
                 </span>
               </Link>
             </div>
@@ -198,7 +198,7 @@ export default class IndexPage extends React.Component {
                 ブログ一覧
               </span>
                 <span className="icon is-link">
-                  <i className="fas fa-caret-right"></i>
+                  <i className="fas fa-caret-right fa-2x"></i>
                 </span></Link>
             </div>
           </div>

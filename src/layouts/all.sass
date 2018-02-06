@@ -139,20 +139,30 @@ body
 //Section "More" Button
 .more-button
   position: absolute
-  top: -3rem
+  top: 0
   right: 0
+  +desktop
+    top: -3rem
   .button
     border: 0
     border-radius: 0
     height: 2em
     padding: 0
+    +touch
+      height: 3em
     span
-      padding: calc(0.3125em - 1px) calc(0.625em - 1px)
+      +desktop
+        padding: calc(0.3125em - 1px) calc(0.625em - 1px)
+      +touch
+        width: calc(100% - 48px)
     .icon
       padding: 0
       color: #fff
       height: 2em
       width: 2em
+      +touch
+        height: 3em
+        width: 3em
       &.is-primary
         background-color: $primary
       &.is-link
