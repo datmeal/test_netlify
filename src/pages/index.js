@@ -165,7 +165,6 @@ export default class IndexPage extends React.Component {
             <div className="level">
               <div className="level-item">
                 <div className="buttons">
-                  <Link to="/products" className="button is-link">採用情報</Link>
                   <Link to="/products" className="button">メンバーのプロフィール</Link>
                 </div>
               </div>
