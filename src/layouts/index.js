@@ -8,6 +8,12 @@ import Navmenu from '../components/Navmenu';
 import './all.sass';
 
 class TemplateWrapper extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      locale: "en"
+    }
+  }
   render() {
     return (
       <div>
