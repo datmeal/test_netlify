@@ -32,7 +32,7 @@ export default class IndexPage extends React.Component {
           <div className="hero-body">
             <div className="container hero-container">
               <div className="hero-left is-hidden-touch">
-                <h1 className="title">POWER TO THE CROWD</h1>
+                <h1 className="title">POWER TO THE CROWDS</h1>
                 <br/>
                 <h2 className="subtitle">既存の枠組みにとらわれない、新しい発想で世界を変革する事を応援します。</h2>
               </div>
@@ -76,30 +76,31 @@ export default class IndexPage extends React.Component {
               .filter(post => post.node.frontmatter.templateKey === "blog-post")
               .map(({ node: post }) => (
                 <div
-                  className="content"
-                  style={{ border: "1px solid #eaecee", padding: "2em 4em" }}
+                  className="content columns"
+                  style={{ }}
                   key={post.id}
                 >
-                  <p>
+                  <p className="column is-one-fifth is-marginless has-text-primary has-text-weight-bold">
+                    {post.frontmatter.date}
+                  </p>
+                  <p className="column">
                     <Link className="has-text-primary" to={post.frontmatter.path}>
                       {post.frontmatter.title}
                     </Link>
-                    <span> &bull; </span>
-                    <small>{post.frontmatter.date}</small>
                   </p>
-                  <p>
+                  {/* <p>
                     {post.excerpt}
                     <br />
                     <br />
                     <Link className="button is-small" to={post.frontmatter.path}>
                       Keep Reading →
                     </Link>
-                  </p>
+                  </p> */}
                 </div>
               ))}
             <div className="level">
               <div className="level-item">
-                <Link to="/" className="button has-text-primary">ニュース一覧</Link>
+                <Link to="/" className="button is-medium is-primary is-outlined">ニュース一覧</Link>
               </div>
             </div>
             {/* <Scrolldown targetId="services"/> */}
@@ -138,11 +139,11 @@ export default class IndexPage extends React.Component {
               </div>
             </div>
             <div className="more-button">
-              <Link to="/" className="button is-primary">
+              <Link to="/" className="button">
                 <span>
                   他のサービスを見る
                 </span>
-                <span className="icon">
+                <span className="icon is-primary">
                   <i className="fas fa-caret-right"></i>
                 </span>
               </Link>
@@ -170,11 +171,11 @@ export default class IndexPage extends React.Component {
               </div>
             </div>
             <div className="more-button">
-              <Link to="/" className="button is-link">
+              <Link to="/" className="button is-light">
                 <span>
                   採用情報を見る
                 </span>
-                <span className="icon">
+                <span className="icon is-link">
                   <i className="fas fa-caret-right"></i>
                 </span>
               </Link>
@@ -193,10 +194,10 @@ export default class IndexPage extends React.Component {
               <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
             </div>
             <div className="more-button">
-              <Link to="/" className="button is-link"><span>
+              <Link to="/" className="button is-light"><span>
                 ブログ一覧
               </span>
-                <span className="icon">
+                <span className="icon is-link">
                   <i className="fas fa-caret-right"></i>
                 </span></Link>
             </div>

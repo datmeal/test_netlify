@@ -139,8 +139,27 @@ body
 //Section "More" Button
 .more-button
   position: absolute
-  top: 0
+  top: -3rem
   right: 0
+  .button
+    border: 0
+    border-radius: 0
+    height: 2em
+    padding: 0
+    span
+      padding: calc(0.3125em - 1px) calc(0.625em - 1px)
+    .icon
+      padding: 0
+      color: #fff
+      height: 2em
+      width: 2em
+      &.is-primary
+        background-color: $primary
+      &.is-link
+        background-color: $link
+      &:last-child:not(:first-child)
+        margin-right: 0
+        margin-left: 0
   +touch
     display: flex
     justify-content: center
