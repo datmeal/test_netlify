@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import Link from "gatsby-link";
+import Link from 'gatsby-link';
 
 import Navbar from '../components/Navbar';
 import Navmenu from '../components/Navmenu';
@@ -11,8 +11,8 @@ class TemplateWrapper extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      locale: "en"
-    }
+      locale: 'en',
+    };
   }
   render() {
     return (
@@ -55,11 +55,9 @@ class TemplateWrapper extends Component {
       <p className="is-block has-text-primary">Copyright Crowd Cast Co., Ltd. All rights reserved.</p>
     </footer> */}
       </div>
-    )
+    );
   }
 }
-
-  
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func,

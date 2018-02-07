@@ -1,20 +1,19 @@
-import React from "react";
-import Link from "gatsby-link";
-import Script from "react-load-script";
-import graphql from "graphql";
+import React from 'react';
+import Link from 'gatsby-link';
+import Script from 'react-load-script';
+import graphql from 'graphql';
 import gd from '../img/gd.png';
 import Member from '../components/Member';
 import Footer from '../components/Footer';
 //import Scrolldown from '../components/Scrolldown.js';
 
 export default class IndexPage extends React.Component {
-  
   handleScriptLoad() {
     if (typeof window !== `undefined` && window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
+      window.netlifyIdentity.on('init', user => {
         if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
+          window.netlifyIdentity.on('login', () => {
+            document.location.href = '/admin/';
           });
         }
       });
@@ -33,12 +32,16 @@ export default class IndexPage extends React.Component {
             <div className="container hero-container">
               <div className="hero-left is-hidden-touch">
                 <h1 className="title">POWER TO THE CROWDS</h1>
-                <br/>
+                <br />
                 <h2 className="subtitle">既存の枠組みにとらわれない、新しい発想で世界を変革する事を応援します。</h2>
               </div>
               <div className="hero-right is-hidden-touch">
-                <div><img src={gd} width="74" height="37" alt="Good Design" /></div>
-                <div><img src="/img/ipx.png" width="151" height="264" alt="iPhoneX" /></div>
+                <div>
+                  <img src={gd} width="74" height="37" alt="Good Design" />
+                </div>
+                <div>
+                  <img src="/img/ipx.png" width="151" height="264" alt="iPhoneX" />
+                </div>
                 <div className="flex-column">
                   <img src="/img/logo_short.svg" width="89" height="80" alt="Staple Logo" />
                   <img src="/img/apple-store.svg" height="40" alt="Apple Store" />
@@ -62,8 +65,12 @@ export default class IndexPage extends React.Component {
               <img src="/img/good-design-award2017.png" width="132" height="42" alt="Good Design" />
             </figure>
           </div>
-          <div className="is-block"><img src="/img/apple-store.svg" height="48" alt="Apple Store" /></div>
-          <div className="is-block"><img src="/img/google-play.svg" height="48" alt="Google Play" /></div>
+          <div className="is-block">
+            <img src="/img/apple-store.svg" height="48" alt="Apple Store" />
+          </div>
+          <div className="is-block">
+            <img src="/img/google-play.svg" height="48" alt="Google Play" />
+          </div>
         </div>
         <section className="section">
           <Script
@@ -72,23 +79,17 @@ export default class IndexPage extends React.Component {
           />
           <div className="container">
             <h1 className="title has-text-primary has-text-centered-touch">NEWS</h1>
-            {posts
-              .filter(post => post.node.frontmatter.templateKey === "blog-post")
-              .map(({ node: post }) => (
-                <div
-                  className="content columns"
-                  style={{ }}
-                  key={post.id}
-                >
-                  <p className="column is-one-fifth is-marginless has-text-primary has-text-weight-bold">
-                    {post.frontmatter.date}
-                  </p>
-                  <p className="column">
-                    <Link className="has-text-primary" to={post.frontmatter.path}>
-                      {post.frontmatter.title}
-                    </Link>
-                  </p>
-                  {/* <p>
+            {posts.filter(post => post.node.frontmatter.templateKey === 'blog-post').map(({ node: post }) => (
+              <div className="content columns" style={{}} key={post.id}>
+                <p className="column is-one-fifth is-marginless has-text-primary has-text-weight-bold">
+                  {post.frontmatter.date}
+                </p>
+                <p className="column">
+                  <Link className="has-text-primary" to={post.frontmatter.path}>
+                    {post.frontmatter.title}
+                  </Link>
+                </p>
+                {/* <p>
                     {post.excerpt}
                     <br />
                     <br />
@@ -96,11 +97,13 @@ export default class IndexPage extends React.Component {
                       Keep Reading →
                     </Link>
                   </p> */}
-                </div>
-              ))}
+              </div>
+            ))}
             <div className="level">
               <div className="level-item">
-                <Link to="/" className="button is-medium is-primary is-outlined">ニュース一覧</Link>
+                <Link to="/" className="button is-medium is-primary is-outlined">
+                  ニュース一覧
+                </Link>
               </div>
             </div>
             {/* <Scrolldown targetId="services"/> */}
@@ -140,11 +143,9 @@ export default class IndexPage extends React.Component {
             </div>
             <div className="more-button">
               <Link to="/" className="button">
-                <span>
-                  他のサービスを見る
-                </span>
+                <span>他のサービスを見る</span>
                 <span className="icon is-primary">
-                  <i className="fas fa-caret-right fa-2x"></i>
+                  <i className="fas fa-caret-right fa-2x" />
                 </span>
               </Link>
             </div>
@@ -161,21 +162,23 @@ export default class IndexPage extends React.Component {
               <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
               <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
             </div>
-            <h2 className="subtitle has-text-primary has-text-weight-bold is-size-5 has-text-centered">Future is not in front of us, it is inside of us. <br />新しい未来を私達と一緒に作りませんか？</h2>
+            <h2 className="subtitle has-text-primary has-text-weight-bold is-size-5 has-text-centered">
+              Future is not in front of us, it is inside of us. <br />新しい未来を私達と一緒に作りませんか？
+            </h2>
             <div className="level">
               <div className="level-item">
                 <div className="buttons">
-                  <Link to="/products" className="button">メンバーのプロフィール</Link>
+                  <Link to="/products" className="button">
+                    メンバーのプロフィール
+                  </Link>
                 </div>
               </div>
             </div>
             <div className="more-button">
               <Link to="/" className="button is-light">
-                <span>
-                  採用情報を見る
-                </span>
+                <span>採用情報を見る</span>
                 <span className="icon is-link">
-                  <i className="fas fa-caret-right fa-2x"></i>
+                  <i className="fas fa-caret-right fa-2x" />
                 </span>
               </Link>
             </div>
@@ -193,12 +196,12 @@ export default class IndexPage extends React.Component {
               <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
             </div>
             <div className="more-button">
-              <Link to="/" className="button is-light"><span>
-                ブログ一覧
-              </span>
+              <Link to="/" className="button is-light">
+                <span>ブログ一覧</span>
                 <span className="icon is-link">
-                  <i className="fas fa-caret-right fa-2x"></i>
-                </span></Link>
+                  <i className="fas fa-caret-right fa-2x" />
+                </span>
+              </Link>
             </div>
           </div>
         </section>
