@@ -16,6 +16,7 @@ class TemplateWrapper extends Component {
   }
   render() {
     return (
+      //PROVIDER HERE???
       <div>
         <Helmet title="Home | Crowd Cast, Ltd. - POWER TO THE CROWDS">
           <html className="has-navbar-fixed-top" />
