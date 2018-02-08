@@ -32,17 +32,21 @@ export default class IndexPage extends React.Component {
           <div className="hero-body">
             <div className="container hero-container">
               <div className="hero-left is-hidden-touch">
-                <h1 className="title">POWER TO THE CROWDS</h1>
+                <h1 className="title catchphrase">POWER TO THE CROWDS</h1>
                 <br/>
-                <h2 className="subtitle">既存の枠組みにとらわれない、新しい発想で世界を変革する事を応援します。</h2>
+                <h2 className="subtitle salescopy">既存の枠組みにとらわれない、<br />新しい発想で世界を変革する事を応援します。</h2>
               </div>
               <div className="hero-right is-hidden-touch">
-                <div><img src={gd} width="74" height="37" alt="Good Design" /></div>
+                <div><img src={gd} width="112" height="" alt="Good Design" /></div>
                 <div><img src="/img/ipx.png" width="151" height="264" alt="iPhoneX" /></div>
                 <div className="flex-column">
-                  <img src="/img/logo_short.svg" width="89" height="80" alt="Staple Logo" />
+                  <p></p>
+                  <p></p>
+                  <img src="/img/logo_short.svg" width="120" height="" alt="Staple Logo" />
+                  <p></p>
                   <img src="/img/apple-store.svg" height="40" alt="Apple Store" />
                   <img src="/img/google-play.svg" height="40" alt="Google Play" />
+                  <p></p>
                 </div>
               </div>
               <div className="hero-mobile is-hidden-desktop">
