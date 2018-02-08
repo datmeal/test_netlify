@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Link from 'gatsby-link';
 
 import github from '../img/github-icon.svg';
-import logo from '../img/logo.svg';
+import logo from '../img/logo_crowd-cast.svg';
 import Navmenu from './Navmenu.js';
 
 class Navbar extends Component {
@@ -19,7 +19,7 @@ class Navbar extends Component {
           <div className="navbar-brand">
             <Link to="/" className="navbar-item">
               <figure className="image">
-                <img src={logo} alt="Crowd Cast Logo" width="128" height="32" />
+                <img src={logo} alt="Crowd Cast Logo" width="211" height="32" />
               </figure>
             </Link>
           </div>
