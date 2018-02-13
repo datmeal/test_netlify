@@ -6,7 +6,12 @@ import gd from '../img/gd.png';
 import Member from '../components/Member';
 import Footer from '../components/Footer';
 //import Scrolldown from '../components/Scrolldown.js';
+import { connect } from 'react-redux';
 
+@connect(
+  state => ({ content: state.content }),
+  dispatch => ({ switchLanguage: lang => dispatch(actions.switchLanguage(lang)) })
+)
 export default class IndexPage extends React.Component {
   handleScriptLoad() {
     if (typeof window !== `undefined` && window.netlifyIdentity) {
@@ -24,6 +29,7 @@ export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
+    const text = this.props.content.page.home;
 
     return (
       <div>
@@ -31,9 +37,10 @@ export default class IndexPage extends React.Component {
           <div className="hero-body">
             <div className="container hero-container">
               <div className="hero-left is-hidden-touch">
-                <h1 className="title">POWER TO THE CROWDS</h1>
+                <h1 className="title">{text.header}</h1>
+                {/* <h1 className="title">POWER TO THE CROWDS</h1> */}
                 <br />
-                <h2 className="subtitle">既存の枠組みにとらわれない、新しい発想で世界を変革する事を応援します。</h2>
+                <h2 className="subtitle">{text.subtitle}</h2>
               </div>
               <div className="hero-right is-hidden-touch">
                 <div>

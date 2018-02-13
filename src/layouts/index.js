@@ -2,27 +2,36 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
+import { connect } from 'react-redux';
 
 import Navbar from '../components/Navbar';
 import Navmenu from '../components/Navmenu';
 import './all.sass';
 
-class TemplateWrapper extends Component {
+@connect(
+  state => ({
+    content: state.content,
+    language: state.language,
+  }),
+  dispatch => ({ switchLanguage: lang => dispatch(actions.switchLanguage(lang)) })
+)
+export default class TemplateWrapper extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      locale: 'en',
+      locale: this.props.locale,
+      language: this.props.language,
     };
   }
   render() {
     return (
-      //PROVIDER HERE???
       <div>
         <Helmet title="Home | Crowd Cast, Ltd. - POWER TO THE CROWDS">
           <html className="has-navbar-fixed-top" />
           <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js" />
         </Helmet>
-        <Navbar />
+        <Navbar locale={this.props.locale} language={this.props.language} />
+        {/* <LangSwitch /> */}
         <div>{this.props.children()}</div>
         {/* <div>{children()}</div> */}
         {/* <section className="section is-primary">
@@ -62,5 +71,3 @@ class TemplateWrapper extends Component {
 TemplateWrapper.propTypes = {
   children: PropTypes.func,
 };
-
-export default TemplateWrapper;
