@@ -12,8 +12,8 @@ const reducer = (state, action) => {
 };
 
 const initialState = {
-  language: 'EN',
-  locale: 'en',
+  language: 'JP',
+  locale: 'ja',
   content: api.getContent(),
 };
 

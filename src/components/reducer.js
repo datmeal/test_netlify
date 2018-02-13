@@ -3,7 +3,7 @@ const api = require('../state/api');
 
 const initialState = {
   content: api.getContent(), // Loads default language content (en) as an initial state
-  language: 'EN',
+  language: 'JP',
 };
 
 let reducer = function(state = initialState, action) {

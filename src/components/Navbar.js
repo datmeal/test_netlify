@@ -30,15 +30,20 @@ class Navbar extends Component {
               </figure>
             </Link>
           </div>
-          <div className="navbar-start">
-            <LangMenu
-              data={content.page.langmenu}
-              switchLanguage={switchLanguage}
-              locale={locale}
-              language={content.language}
-            />
-          </div>
+          <div className="navbar-start" />
           <div className="navbar-end">
+            <div className="navbar-item is-hidden-touch langmenu">
+              <div className="field is-grouped">
+                <div className="control">
+                  <LangMenu
+                    data={content.page.langmenu}
+                    switchLanguage={switchLanguage}
+                    locale={locale}
+                    language={content.language}
+                  />
+                </div>
+              </div>
+            </div>
             <Navmenu />
           </div>
         </div>
