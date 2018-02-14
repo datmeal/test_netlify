@@ -98,6 +98,7 @@ export default class IndexPage extends React.Component {
                 <p className="column">
                   <Link className="has-text-primary" to={post.frontmatter.path}>
                     {post.frontmatter.title}
+                    {post.frontmatter.locale}
                   </Link>
                 </p>
                 {/* <p>
