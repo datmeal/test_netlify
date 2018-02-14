@@ -6,16 +6,31 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "blog"
-    label: "Blog"
+  - name: "blog_en"
+    label: "Blog (English)"
     folder: "src/pages/blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    # filter: {field: "locale", value: en}
+    filter: {field: "language", value: en}
     fields:
+      - {label: "Language", name: "language", widget: "select", options: ["en", "ja"]}
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Path", name: "path", widget: "string"}
-      # - {label: "Language", name: "locale", widget: "select", options: ["ja", "en"] }
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "blog_ja"
+    label: "Blog (Japanese)"
+    folder: "src/pages/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    filter: {field: "language", value: ja}
+    fields:
+      - {label: "Language", name: "language", widget: "select", options: ["en", "ja"]}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Path", name: "path", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
