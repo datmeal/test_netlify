@@ -30,6 +30,7 @@ export default class IndexPage extends React.Component {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
     const text = this.props.content.page.home;
+    const locale = this.props.content.lang;
 
     return (
       <div>

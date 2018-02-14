@@ -44,7 +44,7 @@ class Navbar extends Component {
                 </div>
               </div>
             </div>
-            <Navmenu />
+            <Navmenu content={this.props} />
           </div>
         </div>
       </nav>
