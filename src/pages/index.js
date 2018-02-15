@@ -118,7 +118,7 @@ export default class IndexPage extends React.Component {
               ))}
             <div className="level">
               <div className="level-item">
-                <Link to="/" className="button is-medium is-primary is-outlined pl2 pr2">
+                <Link to="/" className="button is-medium is-primary is-outlined pl2 pr2 mt3">
                   ニュース一覧
                 </Link>
               </div>
@@ -131,31 +131,31 @@ export default class IndexPage extends React.Component {
             <h1 className="title has-text-primary has-text-centered-touch">SERVICES</h1>
             <div className="columns">
               <div className="column service-column">
-                <Link to="/" className="box pt3 pb3">
+                <a href="https://staple.jp/landing/" target="_blank" className="box pt3 pb3">
                   <figure className="image is-128x128">
                     <img src="/img/staple_vertical.png" alt="法人向け" />
                   </figure>
                   <h2 className="is-size-5 has-text-weight-bold has-text-primary mt1">法人向け</h2>
                   <p className="has-text-primary mt05">スマホ・IC経費精算</p>
-                </Link>
+                </a>
               </div>
               <div className="column service-column">
-                <Link to="/" className="box pt3 pb3">
+                <a href="https://expense.staple.jp/yayoi/" target="_blank" className="box pt3 pb3">
                   <figure className="image is-128x128">
                     <img src="/img/StapleYayoi.png" alt="小規模向け" />
                   </figure>
                   <h2 className="is-size-5 has-text-weight-bold has-text-primary mt1">小規模向け</h2>
                   <p className="has-text-primary mt05">無料の弥生向け経費精算</p>
-                </Link>
+                </a>
               </div>
               <div className="column service-column">
-                <Link to="/" className="box pt3 pb3">
+                <a href="https://staple.hanjohanjo.jp/" target="_blank" className="box pt3 pb3">
                   <figure className="image is-128x128">
                     <img src="/img/StapleCard.png" alt="個人事業・中小零細向け" />
                   </figure>
                   <h2 className="is-size-5 has-text-weight-bold has-text-primary mt1">個人事業・中小零細向け</h2>
                   <p className="has-text-primary mt05">無料の資金繰り計画支援</p>
-                </Link>
+                </a>
               </div>
             </div>
             <div className="more-button dropshadow">
@@ -176,6 +176,9 @@ export default class IndexPage extends React.Component {
               <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
               <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
               <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
+            </div>
+            <div className="level">  
+              <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
               <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
               <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
             </div>
@@ -185,7 +188,7 @@ export default class IndexPage extends React.Component {
             <div className="level">
               <div className="level-item">
                 <div className="buttons">
-                  <Link to="/products" className="button is-medium is-primary is-outlined pl2 pr2">
+                  <Link to="/products" className="button is-medium is-primary is-outlined pl2 pr2 mt3">
                     メンバーのプロフィール
                   </Link>
                 </div>
@@ -213,12 +216,12 @@ export default class IndexPage extends React.Component {
               <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
             </div>
             <div className="more-button dropshadowblack">
-              <Link to="/" className="button is-light">
+              <a href="https://medium.com/@t.hoshikawa" target="_blank" className="button is-light">
                 <span className="mt05 mr1 mb05 ml1">ブログ一覧</span>
                 <span className="icon is-link">
                   <i className="fas fa-caret-right fa-2x" />
                 </span>
-              </Link>
+              </a>
             </div>
           </div>
         </section>

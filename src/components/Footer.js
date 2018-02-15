@@ -9,7 +9,7 @@ class Footer extends Component {
           <div className="container has-text-centered has-text-white">
             <p>最新情報はSNSでもご覧頂けます</p>
             <div className="sns-icons">
-              <i className="fab fa-5x fa-facebook"></i>
+              <a href="https://www.facebook.com/crowdcast/"><i className="fab fa-5x fa-facebook"></i></a>
               <i className="fab fa-5x fa-twitter"></i>
               <i className="fab fa-5x fa-youtube"></i>
             </div>
