@@ -13,7 +13,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             id
             frontmatter {
               templateKey
-              locale
+              language
               path
               date
               title
