@@ -2,6 +2,7 @@
   {
     "language": "EN",
     "lang": "en",
+    "dateFormat": "MMMM DD, YYYY",
     "page": {
       "langmenu": {
         "en": "EN",
@@ -41,6 +42,7 @@
   {
     "language": "JP",
     "lang": "ja",
+    "dateFormat": "MM.DD.YYYY",
     "page": {
       "langmenu": { "en": "EN", "ja": "JP" },
       "menu": { "home": "Pradžia", "about": "Apie" },
