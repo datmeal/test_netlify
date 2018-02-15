@@ -112,7 +112,7 @@ export default class IndexPage extends React.Component {
             ))}
             <div className="level">
               <div className="level-item">
-                <Link to="/" className="button is-medium is-primary is-outlined pl5 pr5">
+                <Link to="/" className="button is-medium is-primary is-outlined pl2 pr2">
                   ニュース一覧
                 </Link>
               </div>
@@ -125,36 +125,36 @@ export default class IndexPage extends React.Component {
             <h1 className="title has-text-primary has-text-centered-touch">SERVICES</h1>
             <div className="columns">
               <div className="column service-column">
-                <div className="box">
+                <Link to="/" className="box pt3 pb3">
                   <figure className="image is-128x128">
                     <img src="/img/staple_vertical.png" alt="法人向け" />
                   </figure>
-                  <h2 className="is-size-5 has-text-weight-bold has-text-primary">法人向け</h2>
-                  <p className="has-text-primary">スマホ・IC経費精算</p>
-                </div>
+                  <h2 className="is-size-5 has-text-weight-bold has-text-primary mt1">法人向け</h2>
+                  <p className="has-text-primary mt05">スマホ・IC経費精算</p>
+                </Link>
               </div>
               <div className="column service-column">
-                <div className="box">
+                <Link to="/" className="box pt3 pb3">
                   <figure className="image is-128x128">
                     <img src="/img/StapleYayoi.png" alt="小規模向け" />
                   </figure>
-                  <h2 className="is-size-5 has-text-weight-bold has-text-primary">小規模向け</h2>
-                  <p className="has-text-primary">無料の弥生向け経費精算</p>
-                </div>
+                  <h2 className="is-size-5 has-text-weight-bold has-text-primary mt1">小規模向け</h2>
+                  <p className="has-text-primary mt05">無料の弥生向け経費精算</p>
+                </Link>
               </div>
               <div className="column service-column">
-                <div className="box">
+                <Link to="/" className="box pt3 pb3">
                   <figure className="image is-128x128">
                     <img src="/img/StapleCard.png" alt="個人事業・中小零細向け" />
                   </figure>
-                  <h2 className="is-size-5 has-text-weight-bold has-text-primary">個人事業・中小零細向け</h2>
-                  <p className="has-text-primary">無料の資金繰り計画支援</p>
-                </div>
+                  <h2 className="is-size-5 has-text-weight-bold has-text-primary mt1">個人事業・中小零細向け</h2>
+                  <p className="has-text-primary mt05">無料の資金繰り計画支援</p>
+                </Link>
               </div>
             </div>
-            <div className="more-button">
-              <Link to="/" className="button">
-                <span>他のサービスを見る</span>
+            <div className="more-button dropshadow">
+              <Link to="/" className="button dropshadow">
+                <span className="mt05 mr1 mb05 ml1">他のサービスを見る</span>
                 <span className="icon is-primary">
                   <i className="fas fa-caret-right fa-2x" />
                 </span>
@@ -174,20 +174,21 @@ export default class IndexPage extends React.Component {
               <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
             </div>
             <h2 className="subtitle has-text-primary has-text-weight-bold is-size-5 has-text-centered">
-              Future is not in front of us, it is inside of us. <br />新しい未来を私達と一緒に作りませんか？
+              新しい未来を私達と一緒に作りませんか？ 
+              {/* Future is not in front of us, it is inside of us. */}
             </h2>
             <div className="level">
               <div className="level-item">
                 <div className="buttons">
-                  <Link to="/products" className="button">
+                  <Link to="/products" className="button is-medium is-primary is-outlined pl2 pr2">
                     メンバーのプロフィール
                   </Link>
                 </div>
               </div>
             </div>
-            <div className="more-button">
+            <div className="more-button dropshadow">
               <Link to="/" className="button is-light">
-                <span>採用情報を見る</span>
+                <span className="mt05 mr1 mb05 ml1">採用情報を見る</span>
                 <span className="icon is-link">
                   <i className="fas fa-caret-right fa-2x" />
                 </span>
@@ -206,9 +207,9 @@ export default class IndexPage extends React.Component {
               <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
               <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
             </div>
-            <div className="more-button">
+            <div className="more-button dropshadowblack">
               <Link to="/" className="button is-light">
-                <span>ブログ一覧</span>
+                <span className="mt05 mr1 mb05 ml1">ブログ一覧</span>
                 <span className="icon is-link">
                   <i className="fas fa-caret-right fa-2x" />
                 </span>
@@ -231,8 +232,8 @@ export const pageQuery = graphql`
           id
           frontmatter {
             title
-            templateKey
-            date(formatString: "MMMM DD, YYYY")
+            templateKey            
+            date(formatString: "YYYY. MM. DD")
             path
           }
         }
@@ -240,3 +241,5 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+// date(formatString: "MMMM DD, YYYY")
