@@ -31,6 +31,7 @@ export default class IndexPage extends React.Component {
     const { edges: posts } = data.allMarkdownRemark;
     const text = this.props.content.page.home;
     const locale = this.props.content.lang;
+    let dateFormat = this.props.content.dateFormat;
 
     return (
       <div>
@@ -90,17 +91,22 @@ export default class IndexPage extends React.Component {
           />
           <div className="container">
             <h1 className="title has-text-primary has-text-centered-touch">NEWS</h1>
-            {posts.filter(post => post.node.frontmatter.templateKey === 'blog-post').map(({ node: post }) => (
-              <div className="content columns" style={{}} key={post.id}>
-                <p className="column is-one-fifth is-marginless has-text-primary has-text-weight-bold">
-                  {post.frontmatter.date}
-                </p>
-                <p className="column">
-                  <Link className="has-text-primary" to={post.frontmatter.path}>
-                    {post.frontmatter.title}
-                  </Link>
-                </p>
-                {/* <p>
+            {posts
+              .filter(
+                post =>
+                  post.node.frontmatter.templateKey === 'blog-post' && post.node.frontmatter.language === `${locale}`
+              )
+              .map(({ node: post }) => (
+                <div className="content columns" style={{}} key={post.id}>
+                  <p className="column is-one-fifth is-marginless has-text-primary has-text-weight-bold">
+                    {post.frontmatter.date}
+                  </p>
+                  <p className="column">
+                    <Link className="has-text-primary" to={post.frontmatter.path}>
+                      {post.frontmatter.title}
+                    </Link>
+                  </p>
+                  {/* <p>
                     {post.excerpt}
                     <br />
                     <br />
@@ -108,8 +114,8 @@ export default class IndexPage extends React.Component {
                       Keep Reading →
                     </Link>
                   </p> */}
-              </div>
-            ))}
+                </div>
+              ))}
             <div className="level">
               <div className="level-item">
                 <Link to="/" className="button is-medium is-primary is-outlined pl5 pr5">
@@ -234,6 +240,7 @@ export const pageQuery = graphql`
             templateKey
             date(formatString: "MMMM DD, YYYY")
             path
+            language
           }
         }
       }
