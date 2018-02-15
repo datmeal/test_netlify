@@ -180,8 +180,7 @@ export default class IndexPage extends React.Component {
               <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
             </div>
             <h2 className="subtitle has-text-primary has-text-weight-bold is-size-5 has-text-centered">
-              新しい未来を私達と一緒に作りませんか？
-              {/* Future is not in front of us, it is inside of us. */}
+              {text.future}
             </h2>
             <div className="level">
               <div className="level-item">
