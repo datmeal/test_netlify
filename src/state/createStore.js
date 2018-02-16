@@ -1,5 +1,4 @@
 import { createStore as reduxCreateStore } from 'redux';
-import text from '../data/content.json';
 import api from './api';
 
 const reducer = (state, action) => {

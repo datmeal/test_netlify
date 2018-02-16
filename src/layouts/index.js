@@ -12,6 +12,8 @@ import './all.sass';
   state => ({
     content: state.content,
     language: state.language,
+    locale: state.locale,
+    feed: state.feed,
   }),
   dispatch => ({ switchLanguage: lang => dispatch(actions.switchLanguage(lang)) })
 )
@@ -21,6 +23,7 @@ export default class TemplateWrapper extends Component {
     this.state = {
       locale: this.props.locale,
       language: this.props.language,
+      feed: this.props.feed,
     };
   }
   render() {

@@ -2,14 +2,18 @@ import React from 'react';
 import Link from 'gatsby-link';
 import Script from 'react-load-script';
 import graphql from 'graphql';
-import gd from '../img/gd.png';
-import Member from '../components/Member';
-import Footer from '../components/Footer';
-//import Scrolldown from '../components/Scrolldown.js';
 import { connect } from 'react-redux';
 
+import Member from '../components/Member';
+import Footer from '../components/Footer';
+
+import gd from '../img/gd.png';
+
 @connect(
-  state => ({ content: state.content }),
+  state => ({
+    content: state.content,
+    feed: state.feed,
+  }),
   dispatch => ({ switchLanguage: lang => dispatch(actions.switchLanguage(lang)) })
 )
 export default class IndexPage extends React.Component {
@@ -25,6 +29,8 @@ export default class IndexPage extends React.Component {
     }
     window.netlifyIdentity.init();
   }
+
+  componentDidMount() {}
 
   render() {
     const { data } = this.props;
@@ -177,7 +183,7 @@ export default class IndexPage extends React.Component {
               <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
               <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
             </div>
-            <div className="level">  
+            <div className="level">
               <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
               <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
               <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
@@ -208,12 +214,20 @@ export default class IndexPage extends React.Component {
         <section className="section is-primary" id="blogs">
           <div className="container">
             <h1 className="title has-text-white">BLOGS</h1>
-            <div className="level">
-              <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
-              <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
-              <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
-              <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
-              <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
+            <div className="columns">
+              {this.props.feed.items.map(function(item) {
+                return (
+                  <div className="column is-one-fifth" key={item.pubDate}>
+                    <a className="has-text-white" href={item.link} data-imgurl={item.thumbnail}>
+                      <p>
+                        <strong>{item.author}</strong>
+                        <br />
+                        {item.title}
+                      </p>
+                    </a>
+                  </div>
+                );
+              })}
             </div>
             <div className="more-button dropshadowblack">
               <a href="https://medium.com/@t.hoshikawa" target="_blank" className="button is-light">
