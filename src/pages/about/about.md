@@ -32,7 +32,6 @@ Keep thinking of who’s the customer, what’s issue, how can we resolve it
 #### Action oriented
 
 Cannot change the world from just thinking
-
-* <small>小さなテキスト</small>
-
-[会社概要](/about/company/)
+<div class="text-center">
+<a class="button is-medium is-primary is-outlined pl5 pr5 mt3" href="/about/company/">会社概要</a>
+</div>
