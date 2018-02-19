@@ -99,7 +99,7 @@ export default class IndexPage extends React.Component {
             onLoad={() => this.handleScriptLoad()}
           />
           <div className="container">
-            <h1 className="title has-text-primary has-text-centered-touch">NEWS</h1>
+            <h1 className="title has-text-primary has-text-centered-touch">NEWS TEST</h1>
             {posts
               .filter(
                 post =>
