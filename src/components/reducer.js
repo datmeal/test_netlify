@@ -16,6 +16,7 @@ let reducer = function(state = initialState, action) {
       return {
         content: api.getContent(action.language),
         feed: rss.getContent(),
+        members,
       };
     default:
       return state;
