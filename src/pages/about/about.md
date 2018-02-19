@@ -33,4 +33,6 @@ Keep thinking of who’s the customer, what’s issue, how can we resolve it
 
 Cannot change the world from just thinking
 
+* <small>小さなテキスト</small>
+
 [会社概要](/about/company/)
