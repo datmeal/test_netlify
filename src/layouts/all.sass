@@ -6,6 +6,8 @@
 $cc-blue: #1a2946
 $cc-blue-invert: #fff
 $cc-orange: #f05a1a
+$cc-white: #fff
+$cc-black: #000
 
 
 $primary: $cc-blue
@@ -55,7 +57,8 @@ h1.title.catchphrase
 
 //Navmenu
 .navMenu
-  background: #efefef
+  background: $cc-blue
+  opacity: 0.95;
   height: 100%
   position: fixed
   right: 0
@@ -74,6 +77,14 @@ h1.title.catchphrase
   padding: 0
   li
     padding: .5rem 0
+.menu-list
+  a
+    color: $cc-white
+    border-radius: 0
+    font-weight: 400
+  a:hover
+    color: $cc-black
+    font-weight: 700
 
 //Navbutton
 .Navbutton
