@@ -10,9 +10,10 @@ language: en
 
 Use asterisks to **bold** text.
 Use underscore key to _italicize_ text.
-Use one asterisk to *italicize* text also.
+Use one asterisk to _italicize_ text also.
 
 ## Ordered List
+
 1. Apples
 2. Oranges
 3. Bananas
@@ -21,28 +22,34 @@ Use one asterisk to *italicize* text also.
 ラインハイトすごくない？
 
 ## Unordered List
+
 * Apples
 * Oranges
 * Bananas
 * Grapes
-- Fruits
-- More Fruits
+* Fruits
+* More Fruits
 
 ### Block Quotes
+
 > Summa dumma lumma numma hello hello block quote.
 
 ### Email address link
-<test@example.com>
+
+<mailto:test@example.com>
 
 ### Inline URL Link
+
 This is an inline link, <http://www.google.com/>, in which the URL is shown.
 
 This is an inline link for [Google](http://www.google.com/) in which the URL is embedded.
 
 ### Inline Images
+
 ![Logo](/img/staple_logo.png)
 
-<a class="button" href="#" style="background-color: #e34444; color: #fff;">Red Button with Custom Style</a>
+<a class="button" style="background-color: #e34444; color: #fff;">Red Button with Custom Style</a>
 
 ###### **HTML Works too!**
-<a class="button" href="#">Button</a>
+
+<a class="button">Button</a>
