@@ -217,8 +217,11 @@ export default class IndexPage extends React.Component {
             <div className="columns">
               {this.props.feed.items.map(function(item) {
                 return (
-                  <div className="column is-one-fifth" key={item.pubDate}>
-                    <a className="has-text-white" href={item.link} data-imgurl={item.thumbnail}>
+                  <div className="column is-one-fifth blog-item" key={item.pubDate}>
+                    <a className="has-text-white blog-item__link" href={item.link}>
+                      <figure className="image blog-item__image">
+                        <img src={item.thumbnail} alt={item.title} />
+                      </figure>
                       <p>
                         <strong>{item.author}</strong>
                         <br />

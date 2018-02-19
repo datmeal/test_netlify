@@ -13,6 +13,7 @@ let reducer = function(state = initialState, action) {
     case action_types.SWITCH_LANGUAGE:
       return {
         content: api.getContent(action.language),
+        feed: rss.getContent(),
       };
     default:
       return state;
