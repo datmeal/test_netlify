@@ -2,61 +2,60 @@
 templateKey: jobs-page
 path: /jobs/
 title: >-
-  Jobs
+  採用情報
 ---
-## Our mission is Power to the Crowds
-Our current focus is to expand our Staple business to the next level. Staple is to help many employees and business owners’ day-to-day expense/finance operation more productive and focus their creatives instead of traditional paper/excel or debit/credit.
 
-We’re always looking for talented people to join our team. Our ideal candidate will be comfortable in a start-up environment and will bring an energetic, fun and creative approach to their work. Our priority is hire the best talent and good team worker, but not about your location, timezone, etc. We may offer a competitive compensation package including stock options for all employees.
+### 私たちのミッションは Power to the Crowds です。
+クラウドキャストは現在、STAPLE（ステイプル）を次のビジネスのステージへ引き上げることを目指しています。
+STAPLEは、従業員の業務を日々のオペレーションから解放し、効率化することで、もっとクリエイティブな作業に集中する時間と環境を整え新しいワークスタイルを提供します。
 
-If you’re interested in our positions, please feel free to email us – hiring@crowdcast.jp with your Linkedin or other similar information which best describe your passion and capabilities.
+私たちは快適なスタートアップの環境で、エネルギッシュでワクワクしたクリエイティブな仕事をもたらしてくれる才能豊かな理想のメンバーを常に求めています。
+弊社は、メンバーが持っている才能を伸ばすことと優れたチームワークを重視し、あなたの住む場所、時間を気にせずに働くことができます。
+また、高い報酬パッケージとストックオプションを全ての従業員に提供しています。
 
+ご興味をお持ちでしたら、お気軽にメールでご連絡ください。
+Linkedinなどのキャリアがわかる情報と一緒に、あなたの情熱や可能性を見せてください。
+hiring@crowdcast.jp
 
-## Software Engineers
-### Front-end development
+<div class="text-center">
+<a class="button is-medium is-primary is-outlined pl5 pr5" href="/contacts/">応募する</a>
+</div>
+
+## ソフトウェアエンジニア
+### フロントエンド開発
 React or other single-page app / component driven JS framework (Ember, Angular, Vue, etc)
-
 GraphQL, Relay, or Apollo a huge plus
 
-### Back-end development
+### バックエンドエンジニア
 Ruby on Rails
-
 PostgreSQL
-
 graphql-ruby a huge plus
-
 Elixir / Phoenix a plus
-
 Microservices app architecture a plus
 
-### Hybrid mobile development
+### ハイブリットモバイルエンジニア
 React Native
+GraphQL, Relay もしくは Apollo a huge plus
+Native Android (Java) もしくは iOS (Objective-C) development a plus
+DevOps with AWS と、もしくは Heroku
 
-GraphQL, Relay, or Apollo a huge plus
-
-Native Android (Java) or iOS (Objective-C) development a plus
-
-DevOps with AWS and/or Heroku
-
-### Other plus skills:
+### その他のスキル
 ElasticSearch
+UI/UXデザインの経験（Sketchを使用）
 
-UI / UX design experience (using Sketch)
+## UI / UX デザイナー
+STAPLEは、私たちグローバルチームと一緒に、次のレベルに向かってサービスを提供できる、才能と経験の豊かなUI/UXデザイナーを探しています。
+私たちは、WebサイトやモバイルアプリのUIデザインに自信があるポートフォリオをお待ちしております。
 
-## UI / UX Designer
-We are looking for a talented and accomplished UI/UX designer to join our global team to help build and expand our applications to the next level. You should have a strong web and mobile UI design portfolio and be confident in working in a small hands on team.
-
-### Skills & Requirements
-2-3+ years experience in web and/or mobile UI design
-
-Graphic design with Sketch
-
+### 必要な経験とスキル
+Webサイト・モバイルアプリUIデザイン、2-3年以上の経験
+Sketchを使ったグラフィックデザイン
 Ability to translate high-level feature requirements in practical and elegant wireframes and designs
-
-Logo and icon design a plus
-
+ロゴやアイコンデザイン
 Front-end web development experience with HTML, CSS, and component driven JavaScript (React, Angular, etc) a huge plus
+英語・日本語でのマーケティングのコピーライティング
+プロダクトマネージメントの経験
 
-Ability to write marketing copy in English and/or Japanese a huge plus
-
-Product management experience a huge plus
+<div class="text-center">
+<a class="button is-medium is-primary is-outlined pl5 pr5" href="/contacts/">お問い合わせ</a>
+</div>
