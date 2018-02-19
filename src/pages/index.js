@@ -13,6 +13,7 @@ import gd from '../img/gd.png';
   state => ({
     content: state.content,
     feed: state.feed,
+    members: state.members,
   }),
   dispatch => ({ switchLanguage: lang => dispatch(actions.switchLanguage(lang)) })
 )
@@ -30,7 +31,9 @@ export default class IndexPage extends React.Component {
     window.netlifyIdentity.init();
   }
 
-  componentDidMount() {}
+  componentDidMount() {
+    console.log(this.props.members);
+  }
 
   render() {
     const { data } = this.props;
@@ -179,14 +182,11 @@ export default class IndexPage extends React.Component {
           <div className="container">
             <h1 className="title has-text-primary has-text-centered-touch">MEMBERS</h1>
             <div className="level">
-              <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
-              <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
-              <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
-            </div>
-            <div className="level">
-              <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
-              <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
-              <Member alt="test" src="/img/t_hoshikawa_color_350-300x300.jpg" />
+              <div className="level-left">
+                {this.props.members.map(function(member) {
+                  return <Member alt={member.name} src={member.imgUrl} />;
+                })}
+              </div>
             </div>
             <h2 className="subtitle has-text-primary has-text-weight-bold is-size-5 has-text-centered">
               {text.future}
