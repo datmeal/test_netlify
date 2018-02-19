@@ -2,27 +2,23 @@
 templateKey: about-page
 path: /about/company/
 title: >-
-  Company PROFILE
+  会社概要
 ---
 
-### Crowd Cast, Ltd.
-We are Tokyo based Fintech startup that focuses on SME mobile, cloud service.
+### クラウドキャスト株式会社
+私たちは東京をベースとしたフィンテックスタートアップ企業です。
+中小企業向けクラウドサービスを提供しています。
 
-#### Founded
-January 2011
+#### 設立
+2011年1月
 
-#### Main bank
-Sumitomo Mitsui Bank (SMBC), Aoyama Branch
+#### 取引銀行
+三井住友銀行 青山支店
+みずほ銀行 渋谷中央支店
 
-Mizuho Bank, Shibuya-Chuo Branch
-
-#### Shareholders
-Yayoi Co., Ltd. (formally known as Intuit Japan)
-
-Spiral Ventures
-
-Saison Ventures
-
-MTI
-
-Others
+#### 株主
+弥生株式会社（Yayoi Co., Ltd.）
+スパイラルベンチャーズ（Spiral Ventures Pte Ltd.）
+株式会社セゾン・ベンチャーズ（Saison Ventures）
+株式会社エムティーアイ（MTI Ltd.）
+その他
