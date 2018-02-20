@@ -1,7 +1,7 @@
 ---
 templateKey: about-page
 path: /about/
-title: About us
+title: ABOUT US
 ---
 ビジネスを強くする21世紀型のクラウド経費精算サービス「Staple (ステイプル)」を開発・提供してます。
 
