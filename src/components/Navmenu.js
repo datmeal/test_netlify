@@ -40,7 +40,7 @@ export default class Navmenu extends Component {
       <nav onMouseLeave={this.deactivate}>
         <div className={this.state.navMenuClass} >
           <ul className="navMenuList menu-list">
-            <li>
+            { /*<li>
               <Link to="/">Home</Link>
             </li>
             <li>
@@ -54,7 +54,7 @@ export default class Navmenu extends Component {
             </li>
             <li>
               <Link to="/contacts/">Contact</Link>
-            </li>
+            </li>*/}
             <li>
               <Link to="/admin/">Admin(temporary)</Link>
             </li>

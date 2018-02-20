@@ -49,25 +49,10 @@ export default class IndexPage extends React.Component {
             <div className="container hero-container">
               <div className="hero-left is-hidden-touch">
                 <h1 className="title catchphrase">{text.header}</h1>
-                <br />
-                <h2 className="subtitle salescopy">{text.subtitle}</h2>
               </div>
               <div className="hero-right is-hidden-touch">
-                <div>
-                  <img src={gd} width="112" height="" alt="Good Design" />
-                </div>
-                <div>
-                  <img src="/img/ipx.png" width="151" height="264" alt="iPhoneX" />
-                </div>
-                <div className="flex-column">
-                  <p />
-                  <p />
                   <img src="/img/logo_short.svg" width="120" height="" alt="Staple Logo" />
-                  <p />
-                  <img src="/img/apple-store.svg" height="40" alt="Apple Store" />
-                  <img src="/img/google-play.svg" height="40" alt="Google Play" />
-                  <p />
-                </div>
+                  { /*<img src={gd} width="112" height="" alt="Good Design" />*/ }
               </div>
               <div className="hero-mobile is-hidden-desktop">
                 <figure className="image">
@@ -127,7 +112,7 @@ export default class IndexPage extends React.Component {
               ))}
             <div className="level">
               <div className="level-item">
-                <Link to="/" className="button is-medium is-primary is-outlined pl2 pr2 mt3">
+                <Link to="/" className="button is-medium is-primary is-outlined pl2 pr2 mt05">
                   ニュース一覧
                 </Link>
               </div>
@@ -194,7 +179,7 @@ export default class IndexPage extends React.Component {
             <div className="level">
               <div className="level-item">
                 <div className="buttons">
-                  <Link to="/products" className="button is-medium is-primary is-outlined pl2 pr2 mt3">
+                  <Link to="/products" className="button is-medium is-primary is-outlined pl2 pr2 mt05">
                     メンバーのプロフィール
                   </Link>
                 </div>
