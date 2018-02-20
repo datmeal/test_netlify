@@ -10,8 +10,8 @@ class Footer extends Component {
             <p>最新情報はSNSでもご覧頂けます</p>
             <div className="sns-icons">
               <a href="https://www.facebook.com/crowdcast/"><i className="fab fa-5x fa-facebook"></i></a>
-              <i className="fab fa-5x fa-twitter"></i>
-              <i className="fab fa-5x fa-youtube"></i>
+              { /*<i className="fab fa-5x fa-twitter"></i>
+              <i className="fab fa-5x fa-youtube"></i>*/ }
             </div>
             <p className="has-text-weight-bold">クラウドキャスト株式会社<br />Crowd Cast Co., Ltd.</p>
             <br />

@@ -4,8 +4,8 @@ class Member extends Component {
 
   render() {
     return (
-      <div className="level-item">
-        <figure className="image is-128x128">
+      <div className="">
+        <figure className="image is-240x240">
           <img src={this.props.src} alt={this.props.alt} />
         </figure>
       </div>
