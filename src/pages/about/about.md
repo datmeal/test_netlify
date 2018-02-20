@@ -1,12 +1,8 @@
 ---
 templateKey: about-page
 path: /about/
-title: >-
-  About us
+title: About us
 ---
-
-# でかいテキさす
-
 #### Creative
 
 Develop the future; enjoy the process of creation
@@ -34,6 +30,7 @@ Keep thinking of who’s the customer, what’s issue, how can we resolve it
 #### Action oriented
 
 Cannot change the world from just thinking
+
 <div class="text-center">
 <a class="button is-medium is-primary is-outlined pl5 pr5 mt3" href="/about/company/">会社概要</a>
 </div>
