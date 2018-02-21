@@ -18,9 +18,14 @@ title: お問い合わせ
 例）400文字以内でご記入ください。
 
 <form name="contact" netlify>
-  <p>
-    <label>お名前: <input type="text" name="name"></label>   
-  </p>
+
+<div class="field">
+  <label class="label">お名前</label>
+  <div class="control">
+    <input class="input" type="text" placeholder="例）山田　太郎">
+  </div>
+</div>
+
   <p>
     <label>メールアドレス: <input type="email" name="email"></label>
   </p>
