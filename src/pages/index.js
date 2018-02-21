@@ -51,8 +51,8 @@ export default class IndexPage extends React.Component {
                 <h1 className="title catchphrase">{text.header}</h1>
               </div>
               <div className="hero-right is-hidden-touch">
-                  <img src="/img/logo_short.svg" width="120" height="" alt="Staple Logo" />
-                  { /*<img src={gd} width="112" height="" alt="Good Design" />*/ }
+                <img src="/img/logo_short.svg" width="120" height="" alt="Staple Logo" />
+                {/*<img src={gd} width="112" height="" alt="Good Design" />*/}
               </div>
               <div className="hero-mobile is-hidden-desktop">
                 <figure className="image">
@@ -166,12 +166,10 @@ export default class IndexPage extends React.Component {
         <section className="section" id="members">
           <div className="container">
             <h1 className="title has-text-primary has-text-centered-touch">MEMBERS</h1>
-            <div className="level">
-              <div className="level-left">
-                {this.props.members.map(function(member) {
-                  return <Member alt={member.name} src={member.imgUrl} />;
-                })}
-              </div>
+            <div className="memberList">
+              {this.props.members.map(member => {
+                return <Member alt={member.name} src={member.imgUrl} />;
+              })}
             </div>
             <h2 className="subtitle has-text-primary has-text-weight-bold is-size-5 has-text-centered">
               {text.future}
