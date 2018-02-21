@@ -8,12 +8,6 @@ title: お問い合わせ
 ご意見・ご相談、料金のお見積もりなど、お気軽にお問合わせください。
 お問合せ内容の確認後、担当者よりご連絡させていただきます。
 
-### お名前 *
-例）山田　太郎
-
-### メールアドレス *
-例）山田　太郎
-
 ### お問い合わせ内容 *
 例）400文字以内でご記入ください。
 
@@ -26,9 +20,25 @@ title: お問い合わせ
   </div>
 </div>
 
+<div class="field">
+  <label class="label">メールアドレス</label>
+  <div class="control has-icons-left has-icons-right">
+    <input class="input is-danger" type="email" placeholder="Email input" value="yamada@crowdcast.jp">
+    <span class="icon is-small is-left">
+      <i class="fas fa-envelope"></i>
+    </span>
+    <span class="icon is-small is-right">
+      <i class="fas fa-exclamation-triangle"></i>
+    </span>
+  </div>
+  <p class="help is-danger">This email is invalid</p>
+</div>
+
   <p>
     <label>メールアドレス: <input type="email" name="email"></label>
   </p>
+
+
   <p>
     <label>お問い合わせ内容: <textarea name="message"></textarea></label>
   </p>
