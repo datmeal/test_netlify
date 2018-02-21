@@ -1,8 +1,7 @@
 ---
 templateKey: contacts-page
 path: /contacts/
-title: >-
-  お問い合わせ
+title: お問い合わせ
 ---
 
 弊社にご関心をお持ちいただきまして、ありがとうございます。
@@ -17,6 +16,21 @@ title: >-
 
 ### お問い合わせ内容 *
 例）400文字以内でご記入ください。
+
+<form name="contact" netlify>
+  <p>
+    <label>お名前: <input type="text" name="name"></label>   
+  </p>
+  <p>
+    <label>メールアドレス: <input type="email" name="email"></label>
+  </p>
+  <p>
+    <label>お問い合わせ内容: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit" class="button is-medium is-primary is-outlined pl5 pr5 mt3">Send</button>
+  </p>
+</form>
 
 <div class="text-center">
 <a class="button is-medium is-primary is-outlined pl5 pr5 mt3" href="/contacts/">内容を確認する</a>
