@@ -34,19 +34,30 @@ title: お問い合わせ
   <p class="help is-danger">This email is invalid</p>
 </div>
 
-  <p>
-    <label>メールアドレス: <input type="email" name="email"></label>
-  </p>
-
-
-  <p>
-    <label>お問い合わせ内容: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit" class="button is-medium is-primary is-outlined pl5 pr5 mt3">Send</button>
-  </p>
-</form>
-
-<div class="text-center">
-<a class="button is-medium is-primary is-outlined pl5 pr5 mt3" href="/contacts/">内容を確認する</a>
+<div class="field">
+  <label class="label">お問い合わせ内容</label>
+  <div class="control">
+    <div class="select">
+      <select>
+        <option>その他</option>
+        <option>応募について</option>
+        <option>取材のご依頼</option>
+      </select>
+    </div>
+  </div>
 </div>
+<div class="field">
+  <label class="label">Message</label>
+  <div class="control">
+    <textarea class="textarea" placeholder="Textarea"></textarea>
+  </div>
+</div>
+<div class="field is-grouped">
+  <div class="control">
+    <button class="button is-medium is-primary is-outlined pl5 pr5">送信する</button>
+  </div>
+  <div class="control">
+    <button class="button is-text">Cancel</button>
+  </div>
+</div>
+</form>
