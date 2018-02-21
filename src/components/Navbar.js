@@ -32,12 +32,8 @@ class Navbar extends Component {
           </div>
           <div className="navbar-end">
             <div className="navbar-menu">
-              <Link to="/about/" className="navbar-item">
-                About
-              </Link>
-              <Link to="/jobs/" className="navbar-item">
-                Jobs
-              </Link>
+              <li className="pl3 pr3"><Link to="/about/">About</Link></li>
+              <li className="pl3 pr3"><Link to="/jobs/">Jobs</Link></li>
             </div>
             <div className="navbar-item is-hidden-touch langmenu">
               <div className="field is-grouped">
