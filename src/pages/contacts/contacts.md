@@ -8,11 +8,7 @@ title: お問い合わせ
 ご意見・ご相談、料金のお見積もりなど、お気軽にお問合わせください。
 お問合せ内容の確認後、担当者よりご連絡させていただきます。
 
-### お問い合わせ内容 *
-例）400文字以内でご記入ください。
-
 <form name="contact" netlify>
-
 <div class="field">
   <label class="label">お名前</label>
   <div class="control">
