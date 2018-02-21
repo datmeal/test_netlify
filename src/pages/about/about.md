@@ -30,7 +30,7 @@ Staple (ステイプル) は、スマートフォン・交通系ICカードを�
       </div-->
     </div>
     <div class="content">
-      
+      クラウドキャストに関する基本情報のページです。
     </div>
   </div>
 </div>
