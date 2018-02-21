@@ -14,7 +14,7 @@ Staple (ステイプル) は、スマートフォン・交通系ICカードを�
 <div class="card">
   <header class="card-header">
     <p class="card-header-title">
-      会社概要
+      COMPANY PROFILE
     </p>
     <a href="/about/company/" class="card-header-icon" aria-label="more options">
       <span class="icon">
