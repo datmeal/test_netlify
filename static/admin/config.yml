@@ -50,7 +50,47 @@ collections:
       - {label: "Language", name: "language", widget: "select", options: ["en", "ja"]}
       - {label: "Body", name: "body", widget: "markdown"}
 
-
+  - name: "Pages - EN"
+    label: "Pages - EN"
+    create: true
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+      - {label: "Path", name: "path", widget: "hidden", default: "/about"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+    files:
+      - file: "src/pages/en/about/about.md"
+        label: "About"
+        name: "about"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/en/about"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/en/about/company/company.md"
+        label: "Company"
+        name: "company"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/en/about/company"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/en/contact/contact.md"
+        label: "Contact"
+        name: "contact"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/en/contact/"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/en/jobs/jobs.md"
+        label: "Jobs"
+        name: "jobs"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "jobs-page"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/jobs"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Pages"
     create: false
@@ -69,32 +109,32 @@ collections:
           - {label: "Path", name: "path", widget: "hidden", default: "/about"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/en/about/about.md"
-        label: "About - EN"
-        name: "about"
+      - file: "src/pages/about/company/company.md"
+        label: "Company"
+        name: "company"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-          - {label: "Path", name: "path", widget: "hidden", default: "/about"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/about/company"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/jobs/jobs.md"
-        label: "Jobs Page"
+        label: "Jobs"
         name: "jobs"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "jobs-page"}
           - {label: "Path", name: "path", widget: "hidden", default: "/jobs"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/contacts/contacts.md"
-        label: "Contacts Page"
-        name: "contacts"
+      - file: "src/pages/contact/contact.md"
+        label: "Contact"
+        name: "contact"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-          - {label: "Path", name: "path", widget: "hidden", default: "/about"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/contact/"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/product/product.md"
-        label: "Product Page"
+        label: "Product"
         name: "product"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}

@@ -2,7 +2,7 @@ import React from 'react';
 import graphql from 'graphql';
 import Content, { HTMLContent } from '../components/Content';
 
-export const ContactsPageTemplate = ({ title, content, contentComponent }) => {
+export const ContactPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
   return (
@@ -24,15 +24,11 @@ export const ContactsPageTemplate = ({ title, content, contentComponent }) => {
 export default ({ data }) => {
   const { markdownRemark: post } = data;
 
-  return (<ContactsPageTemplate
-    contentComponent={HTMLContent}
-    title={post.frontmatter.title}
-    content={post.html}
-  />);
+  return <ContactPageTemplate contentComponent={HTMLContent} title={post.frontmatter.title} content={post.html} />;
 };
 
-export const contactsPageQuery = graphql`
-  query ContactsPage($path: String!) {
+export const contactPageQuery = graphql`
+  query ContactPage($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {

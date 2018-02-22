@@ -1,19 +1,22 @@
 ---
-templateKey: contacts-page
+templateKey: contact-page
 path: /contacts/
 title: >-
   Contact
 ---
 
 ## Send us Email
+
 Any Comments
 
+### Name \*
 
-### Name *
 Name
 
-### Subject *
+### Subject \*
+
 Subject
 
-### Message *
+### Message \*
+
 Messsage
