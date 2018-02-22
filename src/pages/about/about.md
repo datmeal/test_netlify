@@ -24,5 +24,5 @@ Staple (ステイプル) は、スマートフォン・交通系ICカードを�
 </div>
 
 <div class="text-center">
-<a class="button is-medium is-primary is-outlined pl5 pr5 mt3" href="/contacts/">お問い合わせ</a>
+<a class="button is-medium is-primary is-outlined pl5 pr5 mt3" href="/contact/">お問い合わせ</a>
 </div>
