@@ -17,44 +17,18 @@ STAPLEは、従業員の業務を日々のオペレーションから解放し�
 Linkedinなどのキャリアがわかる情報と一緒に、あなたの情熱や可能性を見せてください。
 hiring@crowdcast.jp
 
-<div class="text-center">
-<a class="button is-medium is-primary is-outlined pl5 pr5" href="/contacts/">応募する</a>
+### 募集職種
+<div class="card">
+<a href="/jobs/engineer/">ソフトウェアエンジニア</a>
+イギリス、ベルギー、アメリカなどから、様々なバックグラウンドを持ったメンバーが集まっています。
+</p>
 </div>
 
-## ソフトウェアエンジニア
-### フロントエンド開発
-React or other single-page app / component driven JS framework (Ember, Angular, Vue, etc)
-GraphQL, Relay, or Apollo a huge plus
-
-### バックエンドエンジニア
-Ruby on Rails
-PostgreSQL
-graphql-ruby a huge plus
-Elixir / Phoenix a plus
-Microservices app architecture a plus
-
-### ハイブリットモバイルエンジニア
-React Native
-GraphQL, Relay もしくは Apollo a huge plus
-Native Android (Java) もしくは iOS (Objective-C) development a plus
-DevOps with AWS と、もしくは Heroku
-
-### その他のスキル
-ElasticSearch
-UI/UXデザインの経験（Sketchを使用）
-
-## UI / UX デザイナー
-STAPLEは、私たちグローバルチームと一緒に、次のレベルに向かってサービスを提供できる、才能と経験の豊かなUI/UXデザイナーを探しています。
-私たちは、WebサイトやモバイルアプリのUIデザインに自信があるポートフォリオをお待ちしております。
-
-### 必要な経験とスキル
-Webサイト・モバイルアプリUIデザイン、2-3年以上の経験
-Sketchを使ったグラフィックデザイン
-Ability to translate high-level feature requirements in practical and elegant wireframes and designs
-ロゴやアイコンデザイン
-Front-end web development experience with HTML, CSS, and component driven JavaScript (React, Angular, etc) a huge plus
-英語・日本語でのマーケティングのコピーライティング
-プロダクトマネージメントの経験
+<div class="card">
+<a href="/jobs/designer/">UX / UIデザイナー</a>
+イギリス、ベルギー、アメリカなどから、様々なバックグラウンドを持ったメンバーが集まっています。
+</p>
+</div>
 
 <div class="text-center">
 <a class="button is-medium is-primary is-outlined pl5 pr5" href="/contacts/">お問い合わせ</a>

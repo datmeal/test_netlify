@@ -11,6 +11,18 @@ Staple (ステイプル) は、スマートフォン・交通系ICカードを�
 
 場所やデバイスだけではなく、さらに従業員の役割 (一般ユーザー、マネージャー、経理担当、経営者) による適材適所の「ヒト」を中心にしたデザインを実現しました。また、独自開発した交通系ICカード読取サービス「Stapleリーダー」や他社API連携を組み合わせる「Stapleコネクト」により自動化を進め、入力作業が従来システムより10倍早くなりました。管理側でも自動会計仕訳や自動振込による効率化、ダッシュボード機能によるキャッシュフローの早期見える化が可能となりました。さらに、AI (人工知能) やチャットボットの活用を積極的に進め、生産性と迅速な意思決定を支援します。
 
+<div class="card">
+<a href="/about/company/">COMPANY PROFILE</a>
+クラウドキャスに関する基本ページです。
+</p>
+</div>
+
+<div class="card">
+<a href="/about/company/">MEMBERS</a>
+イギリス、ベルギー、アメリカなどから、様々なバックグラウンドを持ったメンバーが集まっています。
+</p>
+</div>
+
 <div class="text-center">
-<a class="button is-medium is-primary is-outlined pl5 pr5 mt3" href="/about/company/">会社概要</a>
+<a class="button is-medium is-primary is-outlined pl5 pr5 mt3" href="/contacts/">お問い合わせ</a>
 </div>
