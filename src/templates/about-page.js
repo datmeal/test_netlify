@@ -3,8 +3,6 @@ import graphql from 'graphql';
 import Content, { HTMLContent } from '../components/Content';
 import { connect } from 'react-redux';
 
-const poo = this;
-
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
 

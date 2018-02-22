@@ -31,9 +31,7 @@ export default class IndexPage extends React.Component {
     window.netlifyIdentity.init();
   }
 
-  componentDidMount() {
-    console.log(this.props.members);
-  }
+  componentDidMount() {}
 
   render() {
     const { data } = this.props;
