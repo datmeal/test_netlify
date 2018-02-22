@@ -13,8 +13,8 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
           <h2 className="title is-size-3 title-text-weight-bold is-bold-light">{title}</h2>
         </div>
       </header>
-      <section className="section section--gradient">
-        <div className="container">
+      <section className="section section--gradient bg-blue">
+        <div className="container bg-white">
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="section">
