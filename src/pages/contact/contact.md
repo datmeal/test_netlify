@@ -1,12 +1,10 @@
 ---
-templateKey: contacts-page
-path: /contacts/
+templateKey: contact-page
+path: /contact/
 title: お問い合わせ
 ---
 
-弊社にご関心をお持ちいただきまして、ありがとうございます。
-ご意見・ご相談、料金のお見積もりなど、お気軽にお問合わせください。
-お問合せ内容の確認後、担当者よりご連絡させていただきます。
+弊社にご関心をお持ちいただきまして、ありがとうございます。ご意見・ご相談、料金のお見積もりなど、お気軽にお問合わせください。お問合せ内容の確認後、担当者よりご連絡させていただきます。
 
 <form name="contact" netlify>
 <div class="field">
