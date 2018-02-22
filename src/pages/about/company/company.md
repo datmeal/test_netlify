@@ -8,7 +8,7 @@ title: COMPANY PROFILE
 私たちは東京をベースとしたフィンテックスタートアップ企業です。
 中小企業向けクラウドサービスを提供しています。
 
-<table class="table is-bordered is-narrow is-hoverable is-fullwidth">
+<table class="table is-hoverable is-fullwidth">
           <tbody>
             <tr>
               <td>会社名</td>
