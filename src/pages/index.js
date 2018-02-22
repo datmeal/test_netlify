@@ -49,7 +49,9 @@ export default class IndexPage extends React.Component {
                 <h1 className="title catchphrase">{text.header}</h1>
               </div>
               <div className="hero-right is-hidden-touch">
-                <img src="/img/logo_short.svg" width="120" height="" alt="Staple Logo" />
+                <a href="https://staple.jp/landing/" target="_blank">
+                  <img src="/img/staple_gooddesign.svg" width="200" height="" alt="Staple Logo" />
+                </a>
                 {/*<img src={gd} width="112" height="" alt="Good Design" />*/}
               </div>
               <div className="hero-mobile is-hidden-desktop">
@@ -164,12 +166,12 @@ export default class IndexPage extends React.Component {
         <section className="section" id="members">
           <div className="container">
             <h1 className="title has-text-primary has-text-centered-touch">MEMBERS</h1>
-            <div className="columns is-gapless is-multiline">
+            <div className="columns is-gapless is-multiline membersthumbs">
               {this.props.members.map(member => {
                 return <Member alt={member.name} src={member.imgUrl} />;
               })}
             </div>
-            <h2 className="subtitle has-text-primary has-text-weight-bold is-size-5 has-text-centered">
+            <h2 className="subtitle has-text-primary has-text-weight-bold is-size-5 has-text-centered mt2">
               {text.future}
             </h2>
             <div className="level">

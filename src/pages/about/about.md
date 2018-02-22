@@ -3,7 +3,7 @@ templateKey: about-page
 path: /about/
 title: ABOUT US
 ---
-ビジネスを強くする21世紀型のクラウド経費精算サービス「Staple (ステイプル)」を開発・提供してます。
+### ビジネスを強くする21世紀型のクラウド経費精算サービス「Staple (ステイプル)」を開発・提供してます。
 
 Staple (ステイプル) は、スマートフォン・交通系ICカードを使った従業員の経費申請と上長の承認から、経理部門の事務処理までをクラウドで一元管理し、経費精算の手間を1/10に削減します。これまでの紙・表計算ソフトをベースにした20世紀型の経費精算システムとは違い、エンドユーザーファーストのスマートフォン/AIに最適化したプロダクトデザインにより、個人と中小企業における「働き方改革」を推進します。
 
@@ -24,5 +24,5 @@ Staple (ステイプル) は、スマートフォン・交通系ICカードを�
 </div>
 
 <div class="text-center">
-<a class="button is-medium is-primary is-outlined pl5 pr5 mt3" href="/contacts/">お問い合わせ</a>
+<a class="button is-medium is-primary is-outlined pl5 pr5 mt3" href="/contact/">お問い合わせ</a>
 </div>

@@ -7,18 +7,28 @@ export const BlogPostTemplate = ({ content, contentComponent, description, title
   const PostContent = contentComponent || Content;
 
   return (
-    <section className="section">
-      {helmet || ''}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 title-text-weight-bold is-bold-light">{title}</h1>
-            <p>{description}</p>
-            <PostContent content={content} />
+    <div>
+      <header className="header">
+        <div className="container">
+          <h2 className="title is-size-3 title-text-weight-bold is-bold-light">NEWS</h2>
+        </div>
+      </header>
+      <section className="section">
+        {helmet || ''}
+        <div className="container content">
+          <div className="columns">
+            <div className="column is-10 is-offset-1">
+              <h1 className="title-text-weight-bold">{title}</h1>
+              { /*<p>{description}</p>*/ }
+              <PostContent content={content} />
+                <div class="text-center">
+                  <a class="button is-medium is-primary is-outlined pl5 pr5 mt3" href="/contact/">お問い合わせ</a>
+                </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 
