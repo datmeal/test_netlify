@@ -3,9 +3,11 @@ import React, { Component } from 'react';
 class Member extends Component {
   render() {
     return (
-      <figure className="image is-240x240">
-        <img src={this.props.src} alt={this.props.alt} />
-      </figure>
+      <div className="column is-one-third-tablet is-one-quarter-desktop">
+        <figure className="image">
+          <img src={this.props.src} alt={this.props.alt} />
+        </figure>
+      </div>
     );
   }
 }

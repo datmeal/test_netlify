@@ -1,6 +1,9 @@
 import React from 'react';
 import graphql from 'graphql';
 import Content, { HTMLContent } from '../components/Content';
+import { connect } from 'react-redux';
+
+const poo = this;
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
@@ -24,11 +27,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 export default ({ data }) => {
   const { markdownRemark: post } = data;
 
-  return (<AboutPageTemplate
-    contentComponent={HTMLContent}
-    title={post.frontmatter.title}
-    content={post.html}
-  />);
+  return <AboutPageTemplate contentComponent={HTMLContent} title={post.frontmatter.title} content={post.html} />;
 };
 
 export const aboutPageQuery = graphql`

@@ -166,7 +166,7 @@ export default class IndexPage extends React.Component {
         <section className="section" id="members">
           <div className="container">
             <h1 className="title has-text-primary has-text-centered-touch">MEMBERS</h1>
-            <div className="memberList">
+            <div className="columns is-gapless is-multiline">
               {this.props.members.map(member => {
                 return <Member alt={member.name} src={member.imgUrl} />;
               })}

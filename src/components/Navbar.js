@@ -32,7 +32,7 @@ class Navbar extends Component {
           </div>
           <div className="navbar-end">
             <div className="navbar-menu">
-              <Link to="/about/" className="navbar-item">
+              <Link to={content.lang == 'ja' ? '/about/' : '/en/about/'} className="navbar-item">
                 About
               </Link>
               <Link to="/jobs/" className="navbar-item">
