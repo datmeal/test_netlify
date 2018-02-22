@@ -3,30 +3,62 @@ import graphql from 'graphql';
 import Content, { HTMLContent } from '../components/Content';
 import { connect } from 'react-redux';
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
-  const PageContent = contentComponent || Content;
-
-  return (
-    <div>
-      <header className="header">
-        <div className="container">
-          <h2 className="title is-size-3 title-text-weight-bold is-bold-light">{title}</h2>
-        </div>
-      </header>
-      <section className="section section--gradient">
-        <div className="container">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="section">
-                  <PageContent className="content" content={content} />
+@connect(
+  state => ({
+    feed: state.feed,
+    members: state.members,
+  }),
+  dispatch => ({ switchLanguage: lang => dispatch(actions.switchLanguage(lang)) })
+)
+class AboutPageTemplate extends React.Component {
+  render() {
+    const PageContent = this.props.contentComponent || Content;
+    return (
+      <div>
+        <header className="header">
+          <div className="container">
+            <h2 className="title is-size-3 title-text-weight-bold is-bold-light">{this.props.title}</h2>
+          </div>
+        </header>
+        <section className="section section--gradient">
+          <div className="container">
+            <div className="columns is-centered">
+              {/* <div className="column is-narrow" /> */}
+              <div className="column is-10-desktop">
+                <PageContent className="content" content={this.props.content} />
               </div>
+              {/* <div className="column is-narrow" /> */}
             </div>
           </div>
-        </div>
-      </section>
-    </div>
-  );
-};
+        </section>
+      </div>
+    );
+  }
+}
+// const AboutPageTemplate = ({ title, content, contentComponent }) => {
+//   const PageContent = contentComponent || Content;
+
+//   return (
+//     <div>
+//       <header className="header">
+//         <div className="container">
+//           <h2 className="title is-size-3 title-text-weight-bold is-bold-light">{title}</h2>
+//         </div>
+//       </header>
+//       <section className="section section--gradient">
+//         <div className="container">
+//           <div className="columns is-centered">
+//             <div className="column is-narrow" />
+//             <div className="column">
+//               <PageContent className="content" content={content} />
+//             </div>
+//             <div className="column is-narrow" />
+//           </div>
+//         </div>
+//       </section>
+//     </div>
+//   );
+// };
 
 export default ({ data }) => {
   const { markdownRemark: post } = data;
