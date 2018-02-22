@@ -1,8 +1,7 @@
 ---
 templateKey: about-page
 path: /about/company/
-title: >-
-  会社概要
+title: COMPANY PROFILE
 ---
 
 ### クラウドキャスト株式会社
