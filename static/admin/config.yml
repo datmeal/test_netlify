@@ -117,6 +117,14 @@ collections:
           - {label: "Path", name: "path", widget: "hidden", default: "/about/company"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/about/team/team.md"
+        label: "Team"
+        name: "team"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/about/team"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/jobs/jobs.md"
         label: "Jobs"
         name: "jobs"
