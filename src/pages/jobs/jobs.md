@@ -1,8 +1,7 @@
 ---
 templateKey: jobs-page
 path: /jobs/
-title: >-
-  採用情報
+title: JOBS
 ---
 
 ### 私たちのミッションは Power to the Crowds です。
