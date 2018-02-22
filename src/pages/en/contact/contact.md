@@ -1,6 +1,6 @@
 ---
 templateKey: contact-page
-path: /contacts/
+path: /en/contact/
 title: >-
   Contact
 ---
