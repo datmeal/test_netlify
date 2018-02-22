@@ -6,18 +6,22 @@ export const JobsPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 title-text-weight-bold is-bold-light">{title}</h2>
-              <PageContent className="content" content={content} />
+    <div>
+      <header className="header">
+        <h2 className="title is-size-3 title-text-weight-bold is-bold-light">{title}</h2>
+      </header>
+      <section className="section section--gradient">
+        <div className="container">
+          <div className="columns">
+            <div className="column is-10 is-offset-1">
+              <div className="section">
+                <PageContent className="content" content={content} />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 

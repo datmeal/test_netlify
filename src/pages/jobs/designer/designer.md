@@ -2,7 +2,7 @@
 templateKey: jobs-page
 path: /jobs/designer/
 title: >-
-  UI / UX デザイナー採用情報
+  Designer
 ---
 
 STAPLEは、私たちグローバルチームと一緒に、次のレベルに向かってサービスを提供できる、才能と経験の豊かなUI/UXデザイナーを探しています。

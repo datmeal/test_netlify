@@ -2,7 +2,7 @@
 templateKey: jobs-page
 path: /jobs/engineer/
 title: >-
-  ソフトウェアエンジニア採用情報
+  Engineer
 ---
 
 ### フロントエンド開発
