@@ -18,7 +18,7 @@ Staple (ステイプル) は、スマートフォン・交通系ICカードを�
 </div>
 
 <div class="card">
-<a href="/about/company/">MEMBERS</a>
+<a href="/about/members/">MEMBERS</a>
 イギリス、ベルギー、アメリカなどから、様々なバックグラウンドを持ったメンバーが集まっています。
 </p>
 </div>
