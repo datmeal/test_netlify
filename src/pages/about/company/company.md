@@ -3,8 +3,8 @@ templateKey: about-page
 path: /about/company/
 title: COMPANY PROFILE
 ---
-
 ### クラウドキャスト株式会社
+
 私たちは東京をベースとしたフィンテックスタートアップ企業です。
 中小企業向けクラウドサービスを提供しています。
 
@@ -25,6 +25,14 @@ title: COMPANY PROFILE
             <tr>
               <td>設立</td>
               <td>2011年1月</td>
+            </tr>
+            <tr>
+              <td>資本金</td>
+              <td>4,370万円</td>
+            </tr>
+            <tr>
+              <td>加盟団体</td>
+              <td>一般社団法人Fintech協会</td>
             </tr>
             <tr>
               <td>取引銀行</td>
