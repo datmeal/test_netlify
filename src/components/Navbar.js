@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Link from 'gatsby-link';
 
 import github from '../img/github-icon.svg';
-import logo from '../img/logo_crowd-cast.svg';
+import logo from '../img/logo_crowd_cast.svg';
 import Navmenu from './Navmenu.js';
 import LangMenu from './LangMenu.js';
 import { connect } from 'react-redux';

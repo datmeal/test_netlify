@@ -127,10 +127,10 @@ export default class IndexPage extends React.Component {
               <div className="column service-column">
                 <a href="https://staple.jp/landing/" target="_blank" className="box pt3 pb3">
                   <figure className="image is-128x128">
-                    <img src="/img/staple_vertical.png" alt="法人向け" />
+                    <img src="/img/staple_vertical.svg" alt="モバイルアプリSTAPLE" />
                   </figure>
-                  <h2 className="is-size-5 has-text-weight-bold has-text-primary mt1">法人向け</h2>
-                  <p className="has-text-primary mt05">スマホ・IC経費精算</p>
+                  <h2 className="is-size-5 has-text-weight-bold has-text-primary mt1">STAPLE</h2>
+                  <p className="has-text-primary mt05">法人向け、スマホ・IC経費精算</p>
                 </a>
               </div>
               <div className="column service-column">
@@ -138,8 +138,8 @@ export default class IndexPage extends React.Component {
                   <figure className="image is-128x128">
                     <img src="/img/StapleYayoi.png" alt="小規模向け" />
                   </figure>
-                  <h2 className="is-size-5 has-text-weight-bold has-text-primary mt1">小規模向け</h2>
-                  <p className="has-text-primary mt05">無料の弥生向け経費精算</p>
+                  <h2 className="is-size-5 has-text-weight-bold has-text-primary mt1">STAPLE for 弥生</h2>
+                  <p className="has-text-primary mt05">小規模向け無料経費精算</p>
                 </a>
               </div>
               <div className="column service-column">
@@ -147,8 +147,8 @@ export default class IndexPage extends React.Component {
                   <figure className="image is-128x128">
                     <img src="/img/StapleCard.png" alt="個人事業・中小零細向け" />
                   </figure>
-                  <h2 className="is-size-5 has-text-weight-bold has-text-primary mt1">個人事業・中小零細向け</h2>
-                  <p className="has-text-primary mt05">無料の資金繰り計画支援</p>
+                  <h2 className="is-size-5 has-text-weight-bold has-text-primary mt1">STAPLE Pulse</h2>
+                  <p className="has-text-primary mt05">中小零細向け無料資金繰り計画支援</p>
                 </a>
               </div>
             </div>
