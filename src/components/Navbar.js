@@ -34,11 +34,15 @@ class Navbar extends Component {
           </div>
           <div className="navbar-end">
             <div className="navbar-menu">
-              <li className="pl3 pr3">
-                <Link to={content.lang == 'ja' ? '/about/' : '/en/about/'}>About</Link>
+              <li>
+                <Link to={content.lang == 'ja' ? '/about/' : '/en/about/'} className="pl3 pr3">
+                  About
+                </Link>
               </li>
-              <li className="pl3 pr3">
-                <Link to="/jobs/">Jobs</Link>
+              <li>
+                <Link to="/jobs/" className="pl3 pr3">
+                  Jobs
+                </Link>
               </li>
             </div>
             <div className="navbar-item is-hidden-touch langmenu">
