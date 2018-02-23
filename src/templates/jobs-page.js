@@ -1,33 +1,39 @@
 import React from 'react';
 import graphql from 'graphql';
 import Content, { HTMLContent } from '../components/Content';
+import { connect } from 'react-redux';
 import Footer from '../components/Footer';
 
-export const JobsPageTemplate = ({ title, content, contentComponent }) => {
-  const PageContent = contentComponent || Content;
-
-  return (
-    <div>
-      <header className="header">
-        <div className="container">
-          <h2 className="title is-size-3 title-text-weight-bold is-bold-light">{title}</h2>
-        </div>
-      </header>
-      <section className="section section--gradient">
-        <div className="container">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="section">
-                <PageContent className="content" content={content} />
+@connect(
+  state => ({
+    locale: state.content.lang,
+  }),
+  dispatch => ({ switchLangpage: lang => dispatch(actions.switchLangpage(lang)) })
+)
+class JobsPageTemplate extends React.Component {
+  render() {
+    const PageContent = this.props.contentComponent || Content;
+    return (
+      <div>
+        <header className="header">
+          <div className="container">
+            <h2 className="title is-size-3 title-text-weight-bold is-bold-light">{this.props.title}</h2>
+          </div>
+        </header>
+        <section className="section section--gradient">
+          <div className="container">
+            <div className="columns is-centered">
+              <div className="column is-8-desktop">
+                  <PageContent className="content" content={this.props.content} />
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <Footer />
-    </div>
-  );
-};
+        </section>
+        <Footer />
+      </div>
+    );
+  }
+}
 
 export default ({ data }) => {
   const { markdownRemark: post } = data;
