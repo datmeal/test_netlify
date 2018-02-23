@@ -10,7 +10,9 @@ import { connect } from 'react-redux';
 import actions from './actions';
 
 @connect(
-  state => ({ content: state.content }),
+  state => ({
+    content: state.content,
+  }),
   dispatch => ({ switchLanguage: lang => dispatch(actions.switchLanguage(lang)) })
 )
 class Navbar extends Component {
