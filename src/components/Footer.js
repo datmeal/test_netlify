@@ -13,7 +13,7 @@ class Footer extends Component {
               { /*<i className="fab fa-5x fa-twitter"></i>
               <i className="fab fa-5x fa-youtube"></i>*/ }
             </div>
-            <p className="has-text-weight-bold">クラウドキャスト株式会社<br />Crowd Cast Co., Ltd.</p>
+            <p className="has-text-weight-bold">クラウドキャスト株式会社<br />Crowd Cast, Ltd.</p>
             <br />
             <p>東京都千代田区大手町１－６－１<br />大手町ビル4階 FINOLAB</p>
             <br />
@@ -32,7 +32,7 @@ class Footer extends Component {
           <Link to="/" className="is-block has-text-primary">STAPLEをご利用のお客様</Link>
           <Link to="/" className="is-block has-text-primary">STAPLE for 弥生をご利用のお客様</Link>
     <Link to="/" className="is-block has-text-primary">STAPLE Pulseをご利用のお客様</Link>*/ }
-          <p className="is-block has-text-primary">Copyright Crowd Cast Co., Ltd. All rights reserved.</p>
+          <p className="is-block has-text-primary">Copyright Crowd Cast, Ltd. All rights reserved.</p>
         </footer>
       </div>
     )

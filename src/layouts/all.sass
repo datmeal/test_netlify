@@ -16,13 +16,29 @@ $primary: $cc-blue
 $primary-invert: $cc-blue-invert
 $link: $cc-orange
 
-$family-sans-serif: "Ubuntu", 'Noto Sans Japanese', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+//$family-sans-serif: "SF Pro JP", "SF Pro Text", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+$family-sans-serif: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", YuGothic, sans-serif
+// $family-sans-serif: "Ubuntu", 'Noto Sans Japanese', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+//$family-sans-serif: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", YuGothic, sans-serif
+
+$body-size: 17px !default
+$body-weight: 500 !default
 
 // Helper Classes
+
+@font-face
+  font-family: "Yu Gothic"
+  src: local("Yu Gothic Medium")
+  font-weight: 400
+
+@font-face
+  font-family: "Yu Gothic"
+  src: local("Yu Gothic Bold")
+  font-weight: bold
+
 body
   transition: all cubic-bezier(0.0, 0.0, 0.2, 1) .2s
-  white-space: pre-wrap
-  line-height: 2rem
+  white-space: pre-wrap !important
 .header
   padding: 3rem 8rem
   background-color: $cc-blue
@@ -30,7 +46,7 @@ body
     color: $cc-white
     font-size: 2.8rem !important
 p
-  line-height: 2rem
+  line-height: 1.8rem
 a
   color: $cc-blue !important
 .sns-icons a
@@ -53,6 +69,10 @@ a:hover
   font-size: 2.2rem !important
   font-weight: 300 !important
 .title:not(:last-child)
+.content 
+  h1,h2,h3
+    font-size: 1.5rem !important
+    font-weight: 600 !important
 .content h3
   margin-bottom: 0 !important
   line-height: 1.5 !important

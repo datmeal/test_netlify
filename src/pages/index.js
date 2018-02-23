@@ -129,26 +129,26 @@ export default class IndexPage extends React.Component {
                   <figure className="image is-128x128">
                     <img src="/img/staple_vertical.svg" alt="モバイルアプリSTAPLE" />
                   </figure>
-                  <h2 className="is-size-5 has-text-weight-bold has-text-primary mt1">STAPLE</h2>
+                  <h2 className="is-size-5 has-text-weight-bold has-text-primary mt1">Staple</h2>
                   <p className="has-text-primary mt05">法人向け、スマホ・IC経費精算</p>
                 </a>
               </div>
               <div className="column service-column">
                 <a href="https://expense.staple.jp/yayoi/" target="_blank" className="box pt3 pb3">
                   <figure className="image is-128x128">
-                    <img src="/img/StapleYayoi.png" alt="小規模向け" />
+                    <img src="/img/StapleYayoi.png" alt="Staple for 弥生" />
                   </figure>
-                  <h2 className="is-size-5 has-text-weight-bold has-text-primary mt1">STAPLE for 弥生</h2>
+                  <h2 className="is-size-5 has-text-weight-bold has-text-primary mt1">Staple for 弥生</h2>
                   <p className="has-text-primary mt05">小規模向け無料経費精算</p>
                 </a>
               </div>
               <div className="column service-column">
-                <a href="https://staple.hanjohanjo.jp/" target="_blank" className="box pt3 pb3">
+                <a href="https://play.google.com/store/apps/details?id=jp.crowdcast.staple_reader&hl=ja" target="_blank" className="box pt3 pb3">
                   <figure className="image is-128x128">
-                    <img src="/img/StapleCard.png" alt="個人事業・中小零細向け" />
+                    <img src="/img/StapleCard.png" alt="Staple Reader" />
                   </figure>
-                  <h2 className="is-size-5 has-text-weight-bold has-text-primary mt1">STAPLE Pulse</h2>
-                  <p className="has-text-primary mt05">中小零細向け無料資金繰り計画支援</p>
+                  <h2 className="is-size-5 has-text-weight-bold has-text-primary mt1">Staple Reader</h2>
+                  <p className="has-text-primary mt05">交通系ICカード読取専用アプリ</p>
                 </a>
               </div>
             </div>
