@@ -26,5 +26,5 @@ DevOps with AWS と、もしくは Heroku
 ElasticSearch<br />
 UI/UXデザインの経験（Sketchを使用）
 <div class="text-center">
-<a class="button is-medium is-primary is-outlined pl5 pr5" href="/contacts/">応募する</a>
+<a class="button is-medium is-primary is-outlined pl5 pr5" href="/contact/">応募する</a>
 </div>

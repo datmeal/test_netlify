@@ -17,5 +17,5 @@ Front-end web development experience with HTML, CSS, and component driven JavaSc
 英語・日本語でのマーケティングのコピーライティング<br />
 プロダクトマネージメントの経験
 <div class="text-center">
-<a class="button is-medium is-primary is-outlined pl5 pr5" href="/contacts/">応募する</a>
+<a class="button is-medium is-primary is-outlined pl5 pr5" href="/contact/">応募する</a>
 </div>
