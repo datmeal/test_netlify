@@ -2,6 +2,7 @@ import React from 'react';
 import graphql from 'graphql';
 import Content, { HTMLContent } from '../components/Content';
 import { connect } from 'react-redux';
+import Footer from '../components/Footer';
 
 @connect(
   state => ({
@@ -28,6 +29,7 @@ class AboutPageTemplate extends React.Component {
             </div>
           </div>
         </section>
+        <Footer />
       </div>
     );
   }

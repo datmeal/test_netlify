@@ -1,6 +1,7 @@
 import React from 'react';
 import graphql from 'graphql';
 import Content, { HTMLContent } from '../components/Content';
+import Footer from '../components/Footer';
 
 export const JobsPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
@@ -23,6 +24,7 @@ export const JobsPageTemplate = ({ title, content, contentComponent }) => {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };
