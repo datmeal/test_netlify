@@ -114,9 +114,9 @@ export default class IndexPage extends React.Component {
               ))}
             <div className="level">
               <div className="level-item">
-                <Link to="/" className="button is-medium is-primary is-outlined pl2 pr2 mt05">
-                  ニュース一覧
-                </Link>
+                <a href="https://prtimes.jp/main/html/searchrlp/company_id/3611" className="button is-medium is-primary is-outlined pl2 pr2 mt05">
+                  プレスリリース一覧
+                </a>
               </div>
             </div>
             {/* <Scrolldown targetId="services"/> */}
