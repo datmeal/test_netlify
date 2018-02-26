@@ -32,5 +32,5 @@ hiring@crowdcast.jp
 </div>
 
 <div class="text-center">
-<a class="button is-medium is-primary is-outlined pl5 pr5" href="/contacts/">お問い合わせ</a>
+<a class="button is-medium is-primary is-outlined pl5 pr5" href="/contact/">お問い合わせ</a>
 </div>
