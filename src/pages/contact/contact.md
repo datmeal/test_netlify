@@ -17,7 +17,7 @@ title: お問い合わせ
 <div class="field">
   <label class="label">メールアドレス</label>
   <div class="control has-icons-left has-icons-right">
-    <input class="input is-danger" type="email" placeholder="Email input" value="yamada@crowdcast.jp">
+    <input class="input" type="例）email" placeholder="yamada@crowdcast.jp" value="">
     <span class="icon is-small is-left">
       <i class="fas fa-envelope"></i>
     </span>
@@ -25,7 +25,7 @@ title: お問い合わせ
       <i class="fas fa-exclamation-triangle"></i>
     </span>
   </div>
-  <p class="help is-danger">This email is invalid</p>
+  <!--p class="help is-danger">This email is invalid</p-->
 </div>
 
 <div class="field">
