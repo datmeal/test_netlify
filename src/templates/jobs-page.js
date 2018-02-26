@@ -10,7 +10,7 @@ import Footer from '../components/Footer';
   }),
   dispatch => ({ switchLangpage: lang => dispatch(actions.switchLangpage(lang)) })
 )
-class AboutPageTemplate extends React.Component {
+class JobsPageTemplate extends React.Component {
   render() {
     const PageContent = this.props.contentComponent || Content;
     return (
