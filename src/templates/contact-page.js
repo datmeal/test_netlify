@@ -14,12 +14,10 @@ export const ContactPageTemplate = ({ title, content, contentComponent }) => {
       </header>
       <section className="section section--gradient">
         <div className="container">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="section">
+          <div className="columns is-centered">
+            <div className="column is-8-desktop">
                 <h2 className="title is-size-3 title-text-weight-bold is-bold-light">{title}</h2>
                 <PageContent className="content" content={content} />
-              </div>
             </div>
           </div>
         </div>
