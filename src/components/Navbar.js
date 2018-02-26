@@ -40,7 +40,7 @@ class Navbar extends Component {
                 </Link>
               </li>
               <li>
-                <Link to="/jobs/" className="pl3 pr3">
+                <Link to={content.lang == 'ja' ? '/jobs/' : '/en/jobs/'} className="pl3 pr3">
                   Jobs
                 </Link>
               </li>
