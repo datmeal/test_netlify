@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
+import menuIcon from '../img/menu.svg';
+import closeIcon from '../img/close.svg';
 
 export default class Navmenu extends Component {
   constructor(props) {
@@ -8,27 +10,43 @@ export default class Navmenu extends Component {
     this.state = {
       active: false,
       navMenuClass: 'navMenu',
-      buttonIcon: 'fas fa-lg fa-bars',
+      buttonIcon: menuIcon,
     };
 
-    this.activate = this.activate.bind(this);
+    this.clickButton = this.clickButton.bind(this);
+    this.hoverButton = this.hoverButton.bind(this);
     this.deactivate = this.deactivate.bind(this);
   }
 
-  activate() {
+  clickButton() {
+    if (this.state.active === false) {
+      this.setState({ active: true, navMenuClass: 'navMenu active', buttonIcon: closeIcon });
+    } else {
+      this.setState({ active: false, navMenuClass: 'navMenu', buttonIcon: menuIcon });
+    }
     // if(document.documentElement.clientWidth >= 768) {
     //   this.setState({
     //     active: true,
     //     navMenuClass: "navMenu active"
     //   })
     // }
-    this.setState({ active: true, navMenuClass: 'navMenu active', buttonIcon: 'far fa-times-circle' });
+  }
+
+  hoverButton() {
+    this.setState({ active: true, navMenuClass: 'navMenu active', buttonIcon: closeIcon });
+    // if(document.documentElement.clientWidth >= 768) {
+    //   this.setState({
+    //     active: true,
+    //     navMenuClass: "navMenu active"
+    //   })
+    // }
   }
 
   deactivate() {
     this.setState({
       active: false,
       navMenuClass: 'navMenu',
+      buttonIcon: menuIcon,
     });
   }
 
@@ -59,7 +77,7 @@ export default class Navmenu extends Component {
             </li>
           </ul>
         </div>
-        <Navbutton handleClick={this.activate} icon={this.state.buttonIcon} />
+        <Navbutton handleClick={this.clickButton} handleHover={this.hoverButton} icon={this.state.buttonIcon} />
       </nav>
     );
   }
@@ -70,6 +88,7 @@ class Navbutton extends Component {
     super(props);
 
     this.handleClick = this.handleClick.bind(this);
+    this.handleHover = this.handleHover.bind(this);
   }
 
   handleClick() {
@@ -77,7 +96,7 @@ class Navbutton extends Component {
   }
 
   handleHover(e) {
-    this.props.handleClick();
+    this.props.handleHover();
   }
 
   render() {
@@ -85,7 +104,7 @@ class Navbutton extends Component {
       <div>
         <div className="Navbutton" onClick={() => this.handleClick()} onMouseEnter={() => this.handleHover()}>
           <button>
-            <i className={this.props.icon} />
+            <img src={this.props.icon} alt="" />
           </button>
         </div>
       </div>
