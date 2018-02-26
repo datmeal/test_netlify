@@ -17,7 +17,7 @@ class Footer extends Component {
             <br />
             <p>東京都千代田区大手町１－６－１<br />大手町ビル4階 FINOLAB</p>
             <br />
-            <a href="https://goo.gl/maps/6DEdU36SfT32" className="button is-link pl3 pr3">
+            <a href="https://goo.gl/maps/6DEdU36SfT32" className="button pl3 pr3">
               <span>
                 Google Maps
               </span>
