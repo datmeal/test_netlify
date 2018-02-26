@@ -2,45 +2,44 @@ import React, { Component } from 'react';
 import Link from 'gatsby-link';
 
 export default class Navmenu extends Component {
-
   constructor(props) {
     super(props);
 
     this.state = {
       active: false,
-      navMenuClass: "navMenu",
-      buttonIcon: "fas fa-lg fa-bars"
-    }
+      navMenuClass: 'navMenu',
+      buttonIcon: 'fas fa-lg fa-bars',
+    };
 
     this.activate = this.activate.bind(this);
     this.deactivate = this.deactivate.bind(this);
   }
 
   activate() {
-    if(document.documentElement.clientWidth >= 768) {
-      this.setState({
-        active: true,
-        navMenuClass: "navMenu active"
-      })
-    }
+    // if(document.documentElement.clientWidth >= 768) {
+    //   this.setState({
+    //     active: true,
+    //     navMenuClass: "navMenu active"
+    //   })
+    // }
+    this.setState({ active: true, navMenuClass: 'navMenu active', buttonIcon: 'far fa-times-circle' });
   }
 
   deactivate() {
     this.setState({
       active: false,
-      navMenuClass: "navMenu"
-    })
+      navMenuClass: 'navMenu',
+    });
   }
 
-  componentDidMount() {
-  }
+  componentDidMount() {}
 
   render() {
     return (
       <nav onMouseLeave={this.deactivate}>
-        <div className={this.state.navMenuClass} >
+        <div className={this.state.navMenuClass}>
           <ul className="navMenuList menu-list">
-            { /*<li>
+            {/*<li>
               <Link to="/">Home</Link>
             </li>
             <li>
@@ -62,7 +61,7 @@ export default class Navmenu extends Component {
         </div>
         <Navbutton handleClick={this.activate} icon={this.state.buttonIcon} />
       </nav>
-    )
+    );
   }
 }
 
@@ -90,6 +89,6 @@ class Navbutton extends Component {
           </button>
         </div>
       </div>
-    )
+    );
   }
 }
