@@ -60,12 +60,12 @@ a:hover
 .bg-white
   background-color: $cc-white
 
-.title-text-weight-bold
-  font-weight: 200
 .section
   padding: 2rem 5rem !important
 .membersthumbs
   margin: 0 8rem !important
+.blogsthumbs
+  margin: 0rem !important
 .title
   font-size: 2.2rem !important
   font-weight: 300 !important
@@ -253,10 +253,11 @@ h1.title.catchphrase
 //Section "More" Button
 .more-button
   position: absolute
-  top: 0
+  bottom: 0
   right: 0
   +desktop
-    top: -2rem
+    bottom: -3.5rem
+    right: 8rem
   .button
     border: 0
     border-radius: 0
@@ -288,6 +289,52 @@ h1.title.catchphrase
     display: flex
     justify-content: center
     position: relative
+    a
+      width: 100%
+
+.blogunit
+  position: relative
+.blog-text
+  position: absolute
+  bottom: 0
+  right: 0
+  +desktop
+    bottom: 0.7rem
+    left: 0.7rem
+  .button
+    border: 0
+    border-radius: 0
+    height: 2em
+    padding: 0
+    +touch
+      height: 3em
+    span
+      +desktop
+        padding: calc(0.3125em - 1px) calc(0.625em - 1px)
+      +touch
+        width: calc(100% - 48px)
+    .icon
+      padding: 0
+      color: #fff
+      height: 2em
+      width: 2em
+      +touch
+        height: 3em
+        width: 3em
+      &.is-primary
+        background-color: $primary
+      &.is-link
+        background-color: $link
+      &:last-child:not(:first-child)
+        margin-right: 0
+        margin-left: 0
+  +touch
+    display: flex
+    justify-content: center
+    position: relative
+    flex-direction: column
+    background-color: $cc-white
+    padding: 0.5rem 1rem !important
     a
       width: 100%
 

@@ -4,6 +4,7 @@ import Script from 'react-load-script';
 import graphql from 'graphql';
 import { connect } from 'react-redux';
 
+import Blog from '../components/Blog';
 import Member from '../components/Member';
 import Footer from '../components/Footer';
 
@@ -14,6 +15,7 @@ import gd from '../img/gd.png';
     content: state.content,
     feed: state.feed,
     members: state.members,
+    blogs: state.blogs,
   }),
   dispatch => ({ switchLanguage: lang => dispatch(actions.switchLanguage(lang)) })
 )
@@ -152,14 +154,14 @@ export default class IndexPage extends React.Component {
                 </a>
               </div>
             </div>
-            <div className="more-button dropshadow">
+            {/*<div className="more-button dropshadow">
               <Link to="/" className="button dropshadow">
                 <span className="mt05 mr1 mb05 ml1">他のサービスを見る</span>
                 <span className="icon is-primary">
                   <i className="fas fa-caret-right fa-2x" />
                 </span>
               </Link>
-            </div>
+            </div>*/}
             {/* <Scrolldown targetId="members" /> */}
           </div>
         </section>
@@ -184,7 +186,7 @@ export default class IndexPage extends React.Component {
               </div>
             </div>
             <div className="more-button dropshadow">
-              <Link to="/" className="button is-light">
+              <Link to="/jobs/" className="button is-light">
                 <span className="mt05 mr1 mb05 ml1">採用情報を見る</span>
                 <span className="icon is-link">
                   <i className="fas fa-caret-right fa-2x" />
@@ -197,22 +199,9 @@ export default class IndexPage extends React.Component {
         <section className="section is-primary" id="blogs">
           <div className="container">
             <h1 className="title has-text-white">BLOGS</h1>
-            <div className="columns">
-              {this.props.feed.items.map(function(item) {
-                return (
-                  <div className="column is-one-fifth blog-item" key={item.pubDate}>
-                    <a className="has-text-white blog-item__link" href={item.link}>
-                      <figure className="image blog-item__image">
-                        <img src={item.thumbnail} alt={item.title} />
-                      </figure>
-                      <p>
-                        <strong>{item.author}</strong>
-                        <br />
-                        {item.title}
-                      </p>
-                    </a>
-                  </div>
-                );
+            <div className="columns is-gapless is-multiline blogsthumbs">
+              {this.props.blogs.map(blog => {
+                return <Blog alt={blog.name} src={blog.imgUrl} title={blog.title} author={blog.author} date={blog.date} url={blog.url} />;
               })}
             </div>
             <div className="more-button dropshadowblack">
