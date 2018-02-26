@@ -48,23 +48,23 @@ export default class IndexPage extends React.Component {
           <div className="hero-body">
             <div className="container hero-container">
               <div className="hero-left is-hidden-touch">
-                <h1 className="title catchphrase">{text.header}</h1>
+                <h1 className="catchphrase">{text.header}</h1>
               </div>
               <div className="hero-right is-hidden-touch">
                 <a href="https://staple.jp/landing/" target="_blank">
                   <img src="/img/staple_gooddesign.svg" width="200" height="" alt="Staple Logo" />
                 </a>
-                {/*<img src={gd} width="112" height="" alt="Good Design" />*/}
               </div>
-              <div className="hero-mobile is-hidden-desktop">
-                <figure className="image">
-                  <img src="/img/ipx.png" width="168" height="337" alt="iPhoneX" />
-                </figure>
+              <div className="hero is-hidden-desktop">
+              <h1 className="is-size-4 has-text-weight-semibold mb2">{text.header}</h1>
+              <a href="https://staple.jp/landing/" target="_blank" class="textcenter">
+                <img src="/img/staple_gooddesign.svg" width="200" height="" alt="Staple Logo" />
+              </a>
               </div>
             </div>
           </div>
         </div>
-        <div className="mobile-buttons is-flex is-hidden-desktop">
+        {/*<div className="mobile-buttons is-flex is-hidden-desktop">
           <div className="is-flex">
             <figure className="image">
               <img src="/img/staple_logo.png" width="91" height="32" alt="Staple Logo" />
@@ -79,7 +79,7 @@ export default class IndexPage extends React.Component {
           <div className="is-block">
             <img src="/img/google-play.svg" height="48" alt="Google Play" />
           </div>
-        </div>
+        </div>*/}
         <section className="section">
           <Script
             url="https://identity.netlify.com/v1/netlify-identity-widget.js"
@@ -201,7 +201,7 @@ export default class IndexPage extends React.Component {
             <h1 className="title has-text-white">BLOGS</h1>
             <div className="columns is-gapless is-multiline blogsthumbs">
               {this.props.blogs.map(blog => {
-                return <Blog alt={blog.name} src={blog.imgUrl} title={blog.title} author={blog.author} date={blog.date} url={blog.url} />;
+                return <Blog alt={blog.name} src={blog.imgUrl} title={blog.title} author={blog.author} date={blog.date} link={blog.link} />;
               })}
             </div>
             <div className="more-button dropshadowblack">
