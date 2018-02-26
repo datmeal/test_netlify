@@ -1,4 +1,5 @@
 import Link from 'gatsby-link';
+import graphql from 'graphql';
 import React, { Component } from 'react';
 
 class Blog extends Component {
@@ -11,7 +12,7 @@ class Blog extends Component {
         <div className="blog-text has-text-primary">
           <h4 className="is-size-4 has-text-weight-semibold">{this.props.title}</h4>
           <p>
-            {this.props.date} by {this.props.author}
+          {this.props.date} by {this.props.author}
           </p>
         </div>
       </a>
