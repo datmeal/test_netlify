@@ -54,7 +54,8 @@ p
   color: $cc-white !important
 a:hover
   color: $cc-blue-third !important
-
+.textcenter
+  text-align: center
 .bg-blue
   background-color: $cc-blue
 .bg-white
@@ -99,9 +100,6 @@ a:hover
 @import "~bulma"
 
 //CustomCSS
-.section
-  padding: 2rem 1rem
-
 .is-240x240
   width: 240px
   height: 240px
@@ -539,3 +537,9 @@ h1.title.catchphrase
   justify-content: center
   +widescreen
     justify-content: flex-start
+
+.membersthumbs  
+  +desktop
+    margin: 0 8rem !important
+  +tablet
+    margin: 0 4rem !important

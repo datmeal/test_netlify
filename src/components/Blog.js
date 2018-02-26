@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 class Blog extends Component {
   render() {
     return (
-      <Link to={this.props.link} className="column is-half-tablet is-half-desktop blogunit">
+      <a href={this.props.link} className="column is-half-tablet is-half-desktop blogunit">
         <figure className="image">
           <img src={this.props.src} alt={this.props.alt} />
         </figure>
@@ -14,7 +14,7 @@ class Blog extends Component {
             {this.props.date} by {this.props.author}
           </p>
         </div>
-      </Link>
+      </a>
     );
   }
 }
