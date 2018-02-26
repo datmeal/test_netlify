@@ -14,17 +14,19 @@ export const BlogPostTemplate = ({ content, contentComponent, description, title
           <h2 className="title is-size-3 title-text-weight-bold is-bold-light">NEWS</h2>
         </div>
       </header>
-      <section className="section">
+      <section className="section section--gradient">
         {helmet || ''}
-        <div className="container content">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <h1 className="title-text-weight-bold">{title}</h1>
-              { /*<p>{description}</p>*/ }
-              <PostContent content={content} />
-                <div class="text-center">
-                  <a class="button is-medium is-primary is-outlined pl5 pr5 mt3" href="/contact/">お問い合わせ</a>
-                </div>
+        <div className="container">
+          <div className="columns is-centered">
+            <div className="column is-8-desktop">
+              <div className="content">
+                <h1 className="title is-size-3 title-text-weight-bold is-bold-light">{title}</h1>
+                { /*<p>{description}</p>*/ }
+                <PostContent content={content} />
+                  <div class="text-center">
+                    <a class="button is-medium is-primary is-outlined pl5 pr5 mt3" href="/contact/">お問い合わせ</a>
+                  </div>
+              </div>
             </div>
           </div>
         </div>

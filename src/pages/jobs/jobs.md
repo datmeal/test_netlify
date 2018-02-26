@@ -4,7 +4,7 @@ path: /jobs/
 title: JOBS
 ---
 
-<h2 class="mb2">私たちのミッションは Power to the Crowds です。</h2>
+<h2 class="mb2 lh14">私たちのミッションは Power to the Crowds です。</h2>
 
 クラウドキャストは現在、STAPLE（ステイプル）を次のビジネスのステージへ引き上げることを目指しています。
 STAPLE は、従業員の業務を日々のオペレーションから解放し、効率化することで、もっとクリエイティブな作業に集中する時間と環境を整え新しいワークスタイルを提供します。
@@ -17,18 +17,20 @@ hiring@crowdcast.jp
 
 ### 募集職種
 
-<div class="card">
-<a href="/jobs/engineer/">ソフトウェアエンジニア</a>
-イギリス、ベルギー、アメリカなどから、様々なバックグラウンドを持ったメンバーが集まっています。
-</p>
+<div class="card p1">
+<a href="/jobs/engineer/">
+<h4>ソフトウェアエンジニア</h4>
+<p>グローバル規模で行われている開発チームと一緒に活躍してもら、才能と経験の豊かなメンバーを探しています</p>
+</a>
 </div>
 
-<div class="card">
-<a href="/jobs/designer/">UX / UIデザイナー</a>
-イギリス、ベルギー、アメリカなどから、様々なバックグラウンドを持ったメンバーが集まっています。
-</p>
+<div class="card p1">
+<a href="/jobs/designer/">
+<h4>UX / UIデザイナー</h4>
+<p>グローバルチームと一緒に、次のレベルに向かってサービスを提供できる、才能と経験の豊かなメンバーを探しています。</p>
+</a>
 </div>
 
 <div class="text-center">
-<a class="button is-medium is-primary is-outlined pl5 pr5" href="/contacts/">お問い合わせ</a>
+<a class="button is-medium is-primary is-outlined pl5 pr5" href="/contact/">お問い合わせ</a>
 </div>
