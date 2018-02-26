@@ -17,16 +17,18 @@ hiring@crowdcast.jp
 
 ### 募集職種
 
-<div class="card pd2">
-<h4><a href="/jobs/engineer/">ソフトウェアエンジニア</a><h4>
+<div class="card p1">
+<a href="/jobs/engineer/">
+<h4>ソフトウェアエンジニア<h4>
 <p>グローバル規模で行われている開発チームと一緒に活躍してもら、才能と経験の豊かなメンバーを探しています</p>
-</p>
+</a>
 </div>
 
-<div class="card pd2">
-<h4><a href="/jobs/designer/">UX / UIデザイナー</a><h4>
+<div class="card p1">
+<a href="/jobs/designer/">
+<h4>UX / UIデザイナー<h4>
 <p>グローバルチームと一緒に、次のレベルに向かってサービスを提供できる、才能と経験の豊かなメンバーを探しています。</p>
-</p>
+</a>
 </div>
 
 <div class="text-center">
