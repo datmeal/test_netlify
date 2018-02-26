@@ -19,14 +19,14 @@ hiring@crowdcast.jp
 
 <div class="card p1">
 <a href="/jobs/engineer/">
-<h4>ソフトウェアエンジニア</h4>
+<h5>ソフトウェアエンジニア</h5>
 <p>グローバル規模で行われている開発チームと一緒に活躍してもら、才能と経験の豊かなメンバーを探しています</p>
 </a>
 </div>
 
 <div class="card p1">
 <a href="/jobs/designer/">
-<h4>UX / UIデザイナー</h4>
+<h5>UX / UIデザイナー</h5>
 <p>グローバルチームと一緒に、次のレベルに向かってサービスを提供できる、才能と経験の豊かなメンバーを探しています。</p>
 </a>
 </div>
