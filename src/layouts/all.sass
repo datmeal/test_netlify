@@ -104,6 +104,19 @@ a:hover
   width: 240px
   height: 240px
 
+.staplelogo
+  border-radius: 8px  
+.staplelogo:hover, .staplelogo:focus
+	box-shadow: 0 0 0 3px $cc-orange
+.service-column a:hover, .service-column a:focus
+  box-shadow: 0 0 0 3px #6bf
+.membersthumbs figure img:hover, .membersthumbs figure img:focus
+	opacity: 0.5
+.membersthumbs figure
+  background-color: $cc-blue
+.blogsthumbs figure:hover, .blogsthumbs figure:focus
+	opacity: 0.5
+
 .navbar
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
 .navbar-item
@@ -116,8 +129,11 @@ a:hover
 .navbar-menu li
   display: block
   float: left
-
   border-left: 1px solid $cc-blue
+  a
+    color: $cc-blue
+.news a
+  color: $cc-blue
     
 .navbar-menu li:last-child
     border-right: 1px solid $cc-blue
@@ -257,8 +273,8 @@ h1.title.catchphrase
   bottom: 0
   right: 0
   +desktop
-    bottom: -3.5rem
-    right: 8rem
+    bottom: -4.5rem
+    right: 0rem
   .button
     border: 0
     border-radius: 0
@@ -540,7 +556,7 @@ h1.title.catchphrase
 
 .membersthumbs 
   display: flex 
-//   +desktop
-//     margin: 0 8rem !important
-//   +tablet
-//     margin: 0 4rem !important
+  +desktop
+    margin: 0 8rem !important
+  +tablet
+    margin: 0 4rem !important

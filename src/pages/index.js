@@ -52,13 +52,13 @@ export default class IndexPage extends React.Component {
               </div>
               <div className="hero-right is-hidden-touch">
                 <a href="https://staple.jp/landing/" target="_blank">
-                  <img src="/img/staple_gooddesign.svg" width="200" height="" alt="Staple Logo" />
+                  <img src="/img/staple_gooddesign.svg" width="200" height="" alt="Staple Logo" class="staplelogo"/>
                 </a>
               </div>
               <div className="hero is-hidden-desktop">
               <h1 className="is-size-4 has-text-weight-semibold mb2">{text.header}</h1>
               <a href="https://staple.jp/landing/" target="_blank" class="textcenter">
-                <img src="/img/staple_gooddesign.svg" width="200" height="" alt="Staple Logo" />
+                <img src="/img/staple_gooddesign.svg" width="200" height="" alt="Staple Logo" class="staplelogo"/>
               </a>
               </div>
             </div>
@@ -85,7 +85,7 @@ export default class IndexPage extends React.Component {
             url="https://identity.netlify.com/v1/netlify-identity-widget.js"
             onLoad={() => this.handleScriptLoad()}
           />
-          <div className="container">
+          <div className="container news">
             <h1 className="title has-text-primary has-text-centered-touch">NEWS</h1>
             {posts
               .filter(
@@ -98,7 +98,7 @@ export default class IndexPage extends React.Component {
                     {post.frontmatter.date}
                   </p>
                   <p className="column">
-                    <Link className="has-text-primary" to={post.frontmatter.path}>
+                    <Link to={post.frontmatter.path}>
                       {post.frontmatter.title}
                     </Link>
                   </p>
