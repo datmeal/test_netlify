@@ -48,7 +48,7 @@ export default class IndexPage extends React.Component {
           <div className="hero-body">
             <div className="container hero-container">
               <div className="hero-left is-hidden-touch">
-                <h1 className="catchphrase">{text.header}</h1>
+                <h1 className="is-size-2 has-text-weight-semibold catchphrase">{text.header}</h1>
               </div>
               <div className="hero-right is-hidden-touch">
                 <a href="https://staple.jp/landing/" target="_blank">
