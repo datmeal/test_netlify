@@ -13,14 +13,14 @@ Staple (ステイプル) は、スマートフォン・交通系ICカードを�
 
 <div class="card p1">
 <a href="/about/company/">
-<h4>COMPANY PROFILE</h4>
+<h5>COMPANY PROFILE</h5>
 <p>クラウドキャスに関する基本ページです。</p>
 </a>
 </div>
 
 <div class="card p1">
 <a href="/team/">
-<h4>MEMBERS</h4>
+<h5>MEMBERS</h5>
 <p>イギリス、ベルギー、アメリカなどから、様々なバックグラウンドを持ったメンバーが集まっています。</p>
 </a>
 </div>
