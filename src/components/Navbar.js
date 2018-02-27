@@ -13,7 +13,9 @@ import actions from './actions';
   state => ({
     content: state.content,
   }),
-  dispatch => ({ switchLanguage: lang => dispatch(actions.switchLanguage(lang)) })
+  dispatch => ({
+    switchLanguage: lang => dispatch(actions.switchLanguage(lang)),
+  })
 )
 class Navbar extends Component {
   componentDidMount() {}

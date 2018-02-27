@@ -14,6 +14,7 @@ import './all.sass';
     language: state.language,
     locale: state.locale,
     feed: state.feed,
+    navActive: state.navActive,
   }),
   dispatch => ({ switchLanguage: lang => dispatch(actions.switchLanguage(lang)) })
 )

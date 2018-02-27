@@ -52,14 +52,14 @@ export default class IndexPage extends React.Component {
               </div>
               <div className="hero-right is-hidden-touch">
                 <a href="https://staple.jp/landing/" target="_blank">
-                  <img src="/img/staple_gooddesign.svg" width="200" height="" alt="Staple Logo" class="staplelogo"/>
+                  <img src="/img/staple_gooddesign.svg" width="200" height="" alt="Staple Logo" class="staplelogo" />
                 </a>
               </div>
               <div className="hero is-hidden-desktop">
-              <h1 className="is-size-4 has-text-weight-semibold mb2">{text.header}</h1>
-              <a href="https://staple.jp/landing/" target="_blank" class="textcenter">
-                <img src="/img/staple_gooddesign.svg" width="200" height="" alt="Staple Logo" class="staplelogo"/>
-              </a>
+                <h1 className="is-size-4 has-text-weight-semibold mb2">{text.header}</h1>
+                <a href="https://staple.jp/landing/" target="_blank" class="textcenter">
+                  <img src="/img/staple_gooddesign.svg" width="200" height="" alt="Staple Logo" class="staplelogo" />
+                </a>
               </div>
             </div>
           </div>
@@ -98,9 +98,7 @@ export default class IndexPage extends React.Component {
                     {post.frontmatter.date}
                   </p>
                   <p className="column">
-                    <Link to={post.frontmatter.path}>
-                      {post.frontmatter.title}
-                    </Link>
+                    <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
                   </p>
                   {/* <p>
                     {post.excerpt}
@@ -114,7 +112,10 @@ export default class IndexPage extends React.Component {
               ))}
             <div className="level">
               <div className="level-item">
-                <a href="https://prtimes.jp/main/html/searchrlp/company_id/3611" className="button is-medium is-primary is-outlined pl2 pr2 mt05">
+                <a
+                  href="https://prtimes.jp/main/html/searchrlp/company_id/3611"
+                  className="button is-medium is-primary is-outlined pl2 pr2 mt05"
+                >
                   プレスリリース一覧
                 </a>
               </div>
@@ -145,7 +146,11 @@ export default class IndexPage extends React.Component {
                 </a>
               </div>
               <div className="column service-column">
-                <a href="https://play.google.com/store/apps/details?id=jp.crowdcast.staple_reader&hl=ja" target="_blank" className="box pt3 pb3">
+                <a
+                  href="https://play.google.com/store/apps/details?id=jp.crowdcast.staple_reader&hl=ja"
+                  target="_blank"
+                  className="box pt3 pb3"
+                >
                   <figure className="image is-128x128">
                     <img src="/img/StapleCard.png" alt="Staple Reader" />
                   </figure>
@@ -201,7 +206,16 @@ export default class IndexPage extends React.Component {
             <h1 className="title has-text-white">BLOGS</h1>
             <div className="columns is-gapless is-multiline blogsthumbs">
               {this.props.blogs.map(blog => {
-                return <Blog alt={blog.name} src={blog.imgUrl} title={blog.title} author={blog.author} date={blog.date} link={blog.link} />;
+                return (
+                  <Blog
+                    alt={blog.name}
+                    src={blog.imgUrl}
+                    title={blog.title}
+                    author={blog.author}
+                    date={blog.date}
+                    link={blog.link}
+                  />
+                );
               })}
             </div>
             <div className="more-button dropshadowblack">

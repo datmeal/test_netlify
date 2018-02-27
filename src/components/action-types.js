@@ -1,3 +1,4 @@
 module.exports = {
   SWITCH_LANGUAGE: 'SWITCH_LANGUAGE',
+  TOGGLE_MENU: 'TOGGLE_MENU',
 };

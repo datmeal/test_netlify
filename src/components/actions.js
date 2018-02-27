@@ -7,6 +7,12 @@ let actions = {
       language,
     };
   },
+  toggleMenu(bool) {
+    return {
+      type: action_types.TOGGLE_MENU,
+      bool,
+    };
+  },
 };
 
 module.exports = actions;

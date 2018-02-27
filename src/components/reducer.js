@@ -10,17 +10,19 @@ const initialState = {
   feed: rss.getContent(),
   members: members,
   blogs: blogs,
+  navActive: false,
 };
 
 let reducer = function(state = initialState, action) {
   switch (action.type) {
     case action_types.SWITCH_LANGUAGE:
-      return {
+      return Object.assign({}, state, {
         content: api.getContent(action.language),
-        feed: rss.getContent(),
-        members,
-        blogs,
-      };
+      });
+    case action_types.TOGGLE_MENU:
+      return Object.assign({}, state, {
+        navActive: !navActive,
+      });
     default:
       return state;
   }

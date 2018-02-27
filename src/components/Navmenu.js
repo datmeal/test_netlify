@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
+import { connect } from 'react-redux';
 import menuIcon from '../img/menu.svg';
 import closeIcon from '../img/close.svg';
 
+@connect(
+  state => ({
+    navActive: state.navActive,
+  }),
+  dispatch => ({})
+)
 export default class Navmenu extends Component {
   constructor(props) {
     super(props);
@@ -18,7 +25,7 @@ export default class Navmenu extends Component {
     this.deactivate = this.deactivate.bind(this);
   }
 
-  clickButton() {
+  clickButton(e) {
     if (this.state.active === false) {
       this.setState({ active: true, navMenuClass: 'navMenu active', buttonIcon: closeIcon });
     } else {
@@ -58,19 +65,29 @@ export default class Navmenu extends Component {
         <div className={this.state.navMenuClass}>
           <ul className="navMenuList menu-list">
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" onClick={this.deactivate}>
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/about/">About Us</Link>
+              <Link to="/about/" onClick={this.deactivate}>
+                About Us
+              </Link>
             </li>
             <li>
-              <Link to="/jobs/">Jobs</Link>
+              <Link to="/jobs/" onClick={this.deactivate}>
+                Jobs
+              </Link>
             </li>
             <li>
-              <Link to="/contact/">Contact</Link>
+              <Link to="/contact/" onClick={this.deactivate}>
+                Contact
+              </Link>
             </li>
             <li>
-              <Link to="/admin/">Admin(temporary)</Link>
+              <Link to="/admin/" onClick={this.deactivate}>
+                Admin(temporary)
+              </Link>
             </li>
           </ul>
         </div>
@@ -84,11 +101,11 @@ class Navbutton extends Component {
   constructor(props) {
     super(props);
 
-    this.handleClick = this.handleClick.bind(this);
-    this.handleHover = this.handleHover.bind(this);
+    // this.handleClick = this.handleClick.bind(this);
+    // this.handleHover = this.handleHover.bind(this);
   }
 
-  handleClick() {
+  handleClick(e) {
     this.props.handleClick();
   }
 
