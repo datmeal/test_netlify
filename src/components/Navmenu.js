@@ -79,15 +79,17 @@ export default class Navmenu extends Component {
                 Jobs
               </Link>
             </li>
-            <li>
-              <Link to="/contact/" onClick={this.deactivate}>
-                Contact
-              </Link>
+            <li class="mb2">
+              <Link to="/contact/">Contact</Link>
             </li>
             <li>
-              <Link to="/admin/" onClick={this.deactivate}>
-                Admin(temporary)
-              </Link>
+              <Link to="/">日本語</Link>
+            </li>
+            <li>
+              <Link to="/en/">English</Link>
+            </li>
+            <li>
+              <Link to="/admin/">Admin(temporary)</Link>
             </li>
           </ul>
         </div>
